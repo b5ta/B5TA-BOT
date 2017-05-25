@@ -12,7 +12,7 @@ message.channel.send('__**King Black Dragon**__\n'+
                       'Players with low combat-related levels should avoid fighting the King Black Dragon.'+
                       'You can access KBD by activating the artifact North of the Edgeville Monastery'+
                       'If you don't have super anti-fires use an anti-dragon shield and an anti-fire with a one handed weapon'+
-                      'For a strategy guide visit http://runescape.wikia.com/wiki/King_Black_Dragon/Strategies'+
+                      'For a strategy guide visit http://runescape.wikia.com/wiki/King_Black_Dragon/Strategies\n\n'+
                       '__Preferred Combat Style__: Range\n\n'+
                       '__Gear Setup__:\n'+
                       'Expensive | Cheap \n'+
