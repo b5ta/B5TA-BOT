@@ -4,8 +4,8 @@
 ##REQS##
 # Node.js - https://nodejs.org/en/
 
-#1. Download/Clone this rep (keep it somewhere organized)
-#2. Create your bot here https://discordapp.com/developers/applications/me
+#1. Download/Clone this rep (keep it somewhere organized) /n
+#2. Create your bot here https://discordapp.com/developers/applications/me /n
 #3. Follow the creation until your reach your client ID.(leave this window open)
 #4. Invite bot to Discord Server at this Link https://discordapi.com/permissions.html(requires client ID bottom left)
 ##MAKE SURE YOU GIVE THE PERMISSIONS IT NEEDS IN ORDER TO CARRY OUT YOUR CODE CORRECTLY##
