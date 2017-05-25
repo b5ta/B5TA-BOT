@@ -1,22 +1,21 @@
-### B5TA-BOT ###
+# B5TA-BOT #
 
 ## SETTING UP YOUR OWN DISCORD BOT ##
 ## REQS 
-# Node.js - https://nodejs.org/en/
+### Node.js - https://nodejs.org/en/
 ##
 
-#1. Download/Clone this rep (keep it somewhere organized) /n
-#2. Create your bot here https://discordapp.com/developers/applications/me /n
-#3. Follow the creation until your reach your client ID.(leave this window open)
-#4. Invite bot to Discord Server at this Link https://discordapi.com/permissions.html(requires client ID bottom left)
-##MAKE SURE YOU GIVE THE PERMISSIONS IT NEEDS IN ORDER TO CARRY OUT YOUR CODE CORRECTLY##
-#5. Open command line and go to the saved directory ## ex. C:\Users\mycomp>cd path\path\B5TA-BOT ##
-#6. Download discord.js with the command 'npm install discord.js --save' (this should download discord.js into your project)
-#7. Open index.js and enter the User Token of your bot in the bottom(this allows the bot to be accessed by this code)
-#8. On the command line  'node .' (this makes the current code live)
+### 1. Download/Clone this rep (keep it somewhere organized) /n
+### 2. Create your bot here https://discordapp.com/developers/applications/me /n
+### 4. Invite bot to Discord Server at this Link https://discordapi.com/permissions.html(requires client ID bottom left)
+### #MAKE SURE YOU GIVE THE PERMISSIONS IT NEEDS IN ORDER TO CARRY OUT YOUR CODE CORRECTLY##
+### 5. Open command line and go to the saved directory ## ex. C:\Users\mycomp>cd path\path\B5TA-BOT ##
+### 6. Download discord.js with the command 'npm install discord.js --save' (this should download discord.js into your project)
+### 7. Open index.js and enter the User Token of your bot in the bottom(this allows the bot to be accessed by this code)
+### 8. On the command line  'node .' (this makes the current code live)
 
-## If you make changes to your document use ctrl+c on the command line to stop the script, and repeat step 8 to restart the most current saved script.
+## If you make changes to your document use ctrl+c on the command line to stop the script, and repeat step 8 to restart the most current saved script. ##
 
 
-##This bot is intended for learning purposes and possibly discord implementation.##
-#Any Questions or Problems PM me on disc#
+## This bot is intended for learning purposes and possibly discord implementation. ##
+# Any Questions or Problems PM me on disc #
