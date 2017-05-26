@@ -7,7 +7,7 @@
 
 ### 1. Download/Clone this rep (keep it somewhere organized)
 ### 2. Create your bot here https://discordapp.com/developers/applications/me 
-### 4. Invite bot to Discord Server at this Link https://discordapi.com/permissions.html(requires client ID bottom left)
+### 4. Invite bot to Discord Server at this Link https://discordapi.com/permissions.html (requires client ID bottom left)
 ## MAKE SURE YOU GIVE THE PERMISSIONS IT NEEDS IN ORDER TO CARRY OUT YOUR CODE CORRECTLY ##
 ### 5. Open command line and go to the saved directory ex. C:\Users\mycomp>cd path\path\B5TA-BOT ###
 ### 6. Download discord.js with the command 'npm install discord.js --save' (this should download discord.js into your project)
