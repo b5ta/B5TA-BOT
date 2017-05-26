@@ -1,0 +1,25 @@
+}
+});
+///////////////////////////////////////////////////
+//Boss Library
+///////////////////
+/*Kree\'arra*/
+bot.on('message', (message)=>{
+if (message.content == '~boss-kree'){
+message.channel.send('__**Kree\'arra**__\n'+
+                      'Kree'arra is the Armadyl general in the God Wars Dungeon.\n'+
+                      'He has moderate range and mage defence and players can kill it according to their recommended style.'\n+
+                      'Kree is located in the southwest corner of GWD1, to get to Kree you must have level 70 range \(cannot be boosted)\n'+
+                      'For a strategy guide visit http://runescape.wikia.com/wiki/Kree%27arra/Strategies\n\n'+
+                      '__Preferred Combat Style__: Range\n\n'+
+                      '__Gear Setup__:\n'+
+                      'Expensive | Cheap \n'+
+                      'Sirenic Mask>Pernix Cowl>Armadyl Helmet\n'+
+                      'Sirenic Hauberk>Pernix Body>Armadyl Chestplate\n'+
+                      'Sirenic Chaps>Pernix Chaps>Armadyl Chainskirt\n'+
+                      'Swift Gloves>Pernix Gloves>Armadyl Gloves\n'+
+                      'Pernix Boots>Glaiven Boots>Armadyl Boots\n'+
+                      'Amulet of Souls>Farsight Blood Necklace>Farsight Sniper Necklace\n'+
+                      'Max Cape>Skill Cape> Obsidian Cape\n'+
+}
+});
