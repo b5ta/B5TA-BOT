@@ -327,7 +327,7 @@ message.channel.send('__**Kree\'arra**__\n'+
                       'Max Cape > Skill Cape > Obsidian Cape\n\n'+
 
                       '__*2h Weapon*__\n'+
-                      'Nox bow > Royal crossbow > Black salamander'
+                      'Nox bow > Royal crossbow > Black salamander'+
                       '__*Dual Wield*__\n'+
                       'Ascensions Crossbows > Shadow glaives > ')
 }
