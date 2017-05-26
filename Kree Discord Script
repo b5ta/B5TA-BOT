@@ -14,6 +14,7 @@ message.channel.send('__**Kree\'arra**__\n'+
                       '__Preferred Combat Style__: Range\n\n'+
                       '__Gear Setup__:\n'+
                       'Expensive | Cheap \n'+
+                      '__*Armour*__\n'+
                       'Sirenic Mask>Pernix Cowl>Armadyl Helmet\n'+
                       'Sirenic Hauberk>Pernix Body>Armadyl Chestplate\n'+
                       'Sirenic Chaps>Pernix Chaps>Armadyl Chainskirt\n'+
@@ -21,5 +22,9 @@ message.channel.send('__**Kree\'arra**__\n'+
                       'Pernix Boots>Glaiven Boots>Armadyl Boots\n'+
                       'Amulet of Souls>Farsight Blood Necklace>Farsight Sniper Necklace\n'+
                       'Max Cape>Skill Cape> Obsidian Cape\n'+
+                      '__*2h Weapons*__\n'+
+                      'Noxious Longbow>Royal Crossbow>Black Salamander
+                      '__*Dual Wielded Weapons*__\n'+
+                      'Ascension Crossbows>Death Lotus Darts>Chaotic Crossbows\n'+
 }
 });

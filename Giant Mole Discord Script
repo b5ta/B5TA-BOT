@@ -1,0 +1,30 @@
+}
+});
+///////////////////////////////////////////////////
+//Boss Library
+///////////////////
+/*Giant Mole*/
+bot.on('message', (message) =>{
+if (message.content == '~boss-mole'){
+message.channel.send('__**Giant Mole**__\n'+
+                      'The Giant mole is found in Falador Mole Lair below Falador Park.'+
+                      'She is designed to be an introductory boss for low-mid level players around 60 combat level.'+
+                      'While the mole is not very strong, the special attacks can potentially kill unprepared players. It is one of the lowest levelled bosses to drop elite clue scrolls making this a very popular monster for players.'+
+                      'For a strategy guide visit http://runescape.wikia.com/wiki/Giant_mole/Strategies\n\n'+
+                      '__Preferred Combat Style__: Magic\n\n'+
+                      '__Gear Setup__:\n'+
+                      'Expensive | Cheap \n'+
+                      '__*Armour*__\n'+
+                      'Ganodermic Visor/Hood of Subjugation/Ahrim\'s Hood\n'+
+                      'Ganodermic Poncho/Garb of Subjugation/Ahrim\'s Robe Top\n'+
+                      'Ganodermic Leggings/Gown of Subjugation/Ahrim\'s Robe Skirt\n'+
+                      'Spellcaster Gloves/Culinaromancer\'s Gloves 10/Ganodermic Gloves\n'+
+                      'Ragefire Boots/Ganodermic Boots\n'+
+                      'Arcane Stream Necklace/Saradomin\'s Hiss/Amulet of Fury/Dragon Rider Amulet/Amulet of Glory\n'+
+                      'Max Cape/Skill Cape/Obsidian Cape\n'+
+                      '__*2h Weapons*__\n'+
+                      'Noxious Staff>Chaotic Staff>Armadyl Battlestaff\n'+\
+                      '__*Dual Wielded Weapons*__\n'+
+                      'Virtus Wand & Book/Abyssal Wand & Orb/Wand of Treachery & Grifolic Orb\n'+
+}
+});

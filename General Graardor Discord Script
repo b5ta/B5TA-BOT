@@ -1,0 +1,30 @@
+}
+});
+///////////////////////////////////////////////////
+//Boss Library
+///////////////////
+/*General Graardor*/
+bot.on('message', (message)=>{
+if (message.content == '~boss-graar'){
+message.channel.send('__**General Graardor**__\n'+
+                      'General Graardor is one of the most popular of the five God Wars Dungeon bosses to kill, as he is arguably one of the easiest.\n'+
+                      'To enter Bandos\'s Stronghold, players must have at least 70 Strength \(cannot be boosted) and a hammer \(tool belt works).\n'+
+                      'Bandos\'s Stronghold is located in the northwest corner of the God Wars Dungeon.\n'+
+                      'For a strategy guide visit http://runescape.wikia.com/wiki/General_Graardor/Strategies\n\n'+
+                      '__Preferred Combat Style__: Magic\n\n'+
+                      '__Gear Setup__:\n'+
+                      'Expensive | Cheapest\n'+
+                      '__*Armour*__\n'+
+                      'Tectonic Mask>Superior Seasinger\'s Hood>Anima Core Helm of Seren\n'+
+                      'Tectonic Robe top>Superior Seasinger\'s Robe Top>Anima Core Body of Seren\n'+
+                      'Tectonic Robe Bottom>Superior Seasinger\'s Robe Bottom>Anima Core Legs Seren\n'+
+                      'Spellcaster Gloves>Virtus Gloves>Static Gloves\n'+
+                      'Ragefire Boots>Virtus Boots>Boots of Subjugation\n'+
+                      'Amulet of Souls>Blood Arcane Stream Necklace> Saradomin\'s Hiss\n'+
+                      'Max Cape>Skill Cape>Obsidian Cape\n'+
+                      '__*2h Weapons*__\n'+
+                      'Noxious Staff>Staff of Darkness>Attuned Crystal Staff\n'+
+                      '__*Dual Wielded Weapons*__\n'+
+                      'Seismic Wand & Singularity>Seasinger Kiba & Makigai>Attuned Crystal Wand & Orb\n'+
+  }
+});

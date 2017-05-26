@@ -1,0 +1,32 @@
+}
+});
+///////////////////////////////////////////////////
+//Boss Library
+///////////////////
+/*King Black Dragon*/
+bot.on('message', (message) =>{
+if (message.content == '~boss-kbd'){
+message.channel.send('__**King Black Dragon**__\n'+
+                      'The King Black Dragon (or KBD) is one of the stronger dragons in RuneScape and should not be underestimated.'+
+                      'It drops various sought-after items, such as Hard / Elite clue scrolls, dragon rider boots and gloves, King Black Dragon heads and the elusive draconic visage.'+
+                      'Players with low combat-related levels should avoid fighting the King Black Dragon.'+
+                      'You can access KBD by activating the artifact North of the Edgeville Monastery'+
+                      'If you don't have super anti-fires use an anti-dragon shield and an anti-fire with a one handed weapon'+
+                      'For a strategy guide visit http://runescape.wikia.com/wiki/King_Black_Dragon/Strategies\n\n'+
+                      '__Preferred Combat Style__: Range\n\n'+
+                      '__Gear Setup__:\n'+
+                      'Expensive | Cheap \n'+
+                      '__*Armour*__\n'+
+                      'Slayer Helmet \(if on task)>Serenic MaskPernix Cowl>Armadyl Helmet\n'+
+                      'Sirenic Hauberk>Pernix Body>Armadyl Chestplate\n'+
+                      'Sirenic Chaps>Death Lotus Chaps>Pernix Chaps>Armadyl Chainskirt\n'+
+                      'Ascension Grips>Swift Gloves>Armadyl Gloves\n'+
+                      'Flarefrost Boots>Pernix Boots>Armadyl Boots\n'+
+                      'Amulet of Souls>Blood Amulet of Fury>Amulet of Fury\n'+
+                      'Max Cape/Skill Cape/Obsidian Cape\n'+
+                      '__*2h Weapons*__\n'+
+                      'Noxious Bow>Zaryte Bow>RCB\n'+
+                      '__*Dual Wielded Weapons*__\n'+
+                      'Ascension Crossbows>Glaives>Armadyl Crossbows\n'+
+}
+});
