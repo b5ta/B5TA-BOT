@@ -54,7 +54,7 @@ bot.on('message', (message) =>{
 
 /*Attack potion Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!attack'){
+   if (message.content == '!attack potion'){
     message.channel.send('__**Attack Potion Recipe**__\n'+
                          'Guam & Eye of Newt.\n'+
                          'Req Herb Lvl: 1.')
@@ -63,7 +63,7 @@ bot.on('message', (message) =>{
 
  /*Ranging potion Recipe*/
   bot.on('message', (message) =>{
-    if (message.content == '!ranging'){
+    if (message.content == '!ranging potion'){
      message.channel.send('__**Ranging Potion Recipe**__\n'+
                           'Guam & Redberrys.\n'+
                           'Req Herb Lvl: 3.')
@@ -73,7 +73,7 @@ bot.on('message', (message) =>{
 
 /*Magic Potion Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!magic'){
+   if (message.content == '!magic potion'){
      message.channel.send('__**Magic Potion Recipe**__\n'+
                           'Tarromin & Black, Red, Yellow, and White Beads.\n'+
                           'Req Herb Lvl: 5.')
@@ -83,7 +83,7 @@ bot.on('message', (message) =>{
 
 /*Strength Potion Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!strength'){
+   if (message.content == '!strength potion'){
      message.channel.send('__**Strenghth Potion Recipe**__\n'+
                           'Tarromin & Limpwurt Root.\n'+
                           'Req Herb Lvl: 7.')
@@ -133,7 +133,7 @@ bot.on('message', (message) =>{
 
 /*Guthix Rest Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!guthixrest'){
+   if (message.content == '!guthix rest'){
      message.channel.send('__**Guthix Rest Recipe**__\n'+
                           'Harralander & Marrentill.\n'+
                           'Req Herb Lvl: 18.')
@@ -144,7 +144,7 @@ bot.on('message', (message) =>{
 
 /*Guam Tar Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!guamtar'){
+   if (message.content == '!guam tar'){
      message.channel.send('__**Guam Tar Recipe**__\n'+
                           'Guam & Swamp Tar.\n'+
                           'Req Herb Lvl: 19.')
@@ -164,7 +164,7 @@ bot.on('message', (message) =>{
 
 /*Guthix Balance Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!guthixbalance'){
+   if (message.content == '!guthix balance'){
      message.channel.send('__**Guthix Balance Recipe**__\n'+
                           'Restore Potion \(3) Garlic & Silver Dust.\n'+
                           'Req Herb Lvl: 22.')
@@ -194,7 +194,7 @@ bot.on('message', (message) =>{
 
 /*Marrentill Tar Recipe*/
  bot.on('message', (message) =>{
-   if (message.content == '!marrentilltar'){
+   if (message.content == '!marrentill tar'){
      message.channel.send('__**Marrentill Tar Recipe**__\n'+
                           'Marrentill & Swamp Tar.\n'+
                           'Req Herb Lvl: 31.')
@@ -203,11 +203,103 @@ bot.on('message', (message) =>{
  });
 
 /*Super Fishing Explosive Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!super fishing explosive'){
+     message.channel.send('__**Super Fishing Explosive Recipe**__\n'+
+                          'Guam & Rubium.\n'+
+                          'Req Herb Lvl: 31.')
      
+   }
+ });
+
+/*Agility Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!agility potion'){
+     message.channel.send('__**Agility Potion Recipe**__\n'+
+                          'Toadflax & Toad\'s Legs.\n'+
+                          'Req Herb Lvl: 34.')
      
-  
+   }
+ });
+
+/*Combat Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!combat'){
+     message.channel.send('__**Combat Potion Recipe**__\n'+
+                          'Harralander & Goat Horn Dust.\n'+
+                          'Req Herb Lvl: 36.')
      
-      
+   }
+ })'
+
+/*Goblin Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!goblin potion'){
+     message.channel.send('__**Goblin Potion Recipe**__\n'+
+                          'Toadflax & Pharmakos Berries.\n'+
+                          'Req Herb Lvl: 37.')
+     
+   }
+ });
+
+/*Prayer Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!prayer potion'){
+     message.channel.send('__**Prayer Potion Recipe**__\n'+
+                          'Ranarr & Snape Grass.\n'+
+                          'Req Herb Lvl: 38.')
+     
+   }
+ });
+/*Tarromin Tar Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!tarromin tar'){
+     message.channel.send('__**Tarromin Tar Recipe**__\n'+
+                          'Tarromin & Swamp Tar.\n'+
+                          'Req Herb Lvl: 39.')
+     
+   }
+ });
+
+/*Summoning Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!summoning potion'){
+     message.channel.send('__**Summoning Potion Recipe**__\n'+
+                          'Spirit Weed & Cockatrice Egg.\n'+
+                          'Req Herb Lvl: 40.')
+     
+   }
+ });
+
+/*Crafting Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!crafting potion'){
+     message.channel.send('__**Crafting Potion Recipe**__\n'+
+                          'Wergali & Frog Spawn.\n'+
+                          'Req Herb Lvl: 42.')
+     
+   }
+ });
+
+/*Harralander Tar*/
+ bot.on('message', (message) =>{
+   if (message.content == '!harralander tar'){
+     message.channel.send('__**Harralander Tar Recipe**__\n'+
+                          'Harralander & Swamp Tar.\n'+
+                          'Req Herb Lvl: 44.')
+     
+   }
+ });
+
+/*Vial of Stench Recipe*/
+ bot.on('message', (message) =>{
+     if (message.content == '!vial of stench'){
+       message.channel.send('__**Vial of Stench Recipe**__\n'+
+                            'Irit & Chopped Onion.\n'+
+                            'Req Herb Lvl: 46.')
+       
+       
+     
      }
    });
 
