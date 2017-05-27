@@ -67,15 +67,7 @@ bot.on('message', (message) =>{
      message.channel.send('__**Ranging Potion Recipe**__\n'+
                           'Guam & Redberrys.\n'+
                           'Req Herb Lvl: 3.')
-    }
-  });
-
-  /*Ranging potion Recipe*/
-   bot.on('message', (message) =>{
-     if (message.content == '!ranging'){
-      message.channel.send('__**Ranging Potion Recipe**__\n'+
-                           'Guam & Redberrys.\n'+
-                           'Req Herb Lvl: 3.')
+  
      }
    });
 
