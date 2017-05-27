@@ -67,7 +67,79 @@ bot.on('message', (message) =>{
      message.channel.send('__**Ranging Potion Recipe**__\n'+
                           'Guam & Redberrys.\n'+
                           'Req Herb Lvl: 3.')
+      
+    }
+  });
+
+/*Magic Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!magic'){
+     message.channel.send('__**Magic Potion Recipe**__\n'+
+                          'Tarromin & Black, Red, Yellow, and White Beads.\n'+
+                          'Req Herb Lvl: 5.')
+     
+   }
+ });
+
+/*Strength Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!strength'){
+     message.channel.send('__**Strenghth Potion Recipe**__\n'+
+                          'Tarromin & Limpwurt Root.\n'+
+                          'Req Herb Lvl: 7.')
+     
+   }
+ });
+
+/*Relicym\'s Balm Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!relicym'){
+     message.channel.send('__**Relicym\'s Balm Recipe**__\n'+
+                          'Rogue\'s Purse & Snake Weed.\n'+
+                          'Req Herb Lvl: 8.')
+     
+   }
+ });
+
+/*Defence Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!defence'){
+     message.channel.send('__**Defence Potion Recipe**__\n'+
+                          'Marrentill & Bear Fur.\n'+
+                          'Req Herb Lvl: 9.')
+     
+   }
+ });
+
+/*Antipoison Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!antipoison'){
+     message.channel.send('__**Antipoison Recipe**__\n'+
+                          'Marrentill & Unicorn Horn Dust.\n'+
+                          'Req Herb Lvl: 13.')
+     
+   }
+ });
+
+/*Serum 207 Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!serum'){
+     message.channel.send('__**Serum 207 Recipe**__\n'+
+                          'Tarromin & Ashes.\n'+
+                          'Req Herb Lvl: 15.')
+     
+   }
+ });
+
+/*Guthix Rest Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!guthixrest'){
+     message.channel.send('__**Guthix Rest Recipe**__\n'+
+                          'Harralander & Marrentill.\n'+
+                          'Req Herb Lvl: 18.')
   
+     
+      
      }
    });
 
