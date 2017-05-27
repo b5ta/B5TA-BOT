@@ -137,6 +137,74 @@ bot.on('message', (message) =>{
      message.channel.send('__**Guthix Rest Recipe**__\n'+
                           'Harralander & Marrentill.\n'+
                           'Req Herb Lvl: 18.')
+     
+     
+   }
+ });
+
+/*Guam Tar Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!guamtar'){
+     message.channel.send('__**Guam Tar Recipe**__\n'+
+                          'Guam & Swamp Tar.\n'+
+                          'Req Herb Lvl: 19.')
+     
+   }
+ });
+
+/*Restore Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!restore'){
+     message.channel.send('__**Restore Potion Recipe**__\n'+
+                          'Harralander & Red Spiders\' Eggs.\n'+
+                          'Req Herb Lvl: 22.')
+     
+   }
+ });
+
+/*Guthix Balance Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!guthixbalance'){
+     message.channel.send('__**Guthix Balance Recipe**__\n'+
+                          'Restore Potion \(3) Garlic & Silver Dust.\n'+
+                          'Req Herb Lvl: 22.')
+     
+   }
+ });
+
+/*Blamish Oil Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!blamish'){
+     message.channel.send('__**Blamish Oil Recipe**__\n'+
+                          'Harralander & Blamish Snail Slime.\n'+
+                          'Req Herb Lvl: 25.')
+     
+   }
+ });
+
+/*Energy Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!energy'){
+     message.channel.send('__**Energy Potion Recipe**__\n'+
+                          'Harralander & Chocolate.\n'+
+                          'Req Herb Lvl: 26.')
+     
+   }
+ });
+
+/*Marrentill Tar Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!marrentilltar'){
+     message.channel.send('__**Marrentill Tar Recipe**__\n'+
+                          'Marrentill & Swamp Tar.\n'+
+                          'Req Herb Lvl: 31.')
+     
+   }
+ });
+
+/*Super Fishing Explosive Recipe*/
+     
+     
   
      
       
