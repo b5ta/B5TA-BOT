@@ -158,7 +158,8 @@
    if (message.content == '!summoning potion'){
      message.channel.send('__**Summoning Potion Recipe**__\n'+
                           'Spirit Weed & Cockatrice Egg.\n'+
-                          'Req Herb Lvl: 40.')
+                          'Req Herb Lvl: 40.\n'+
+                          'Exp Per Action: 92.')
      
    }
  });
@@ -168,7 +169,8 @@
    if (message.content == '!crafting potion'){
      message.channel.send('__**Crafting Potion Recipe**__\n'+
                           'Wergali & Frog Spawn.\n'+
-                          'Req Herb Lvl: 42.')
+                          'Req Herb Lvl: 42.\n'+
+                          'Exp Per Action: 95.')
      
    }
  });
@@ -178,8 +180,9 @@
    if (message.content == '!harralander tar'){
      message.channel.send('__**Harralander Tar Recipe**__\n'+
                           'Harralander & Swamp Tar.\n'+
-                          'Req Herb Lvl: 44.')
-     
+                          'Req Herb Lvl: 44.\n'+
+                          'Exp Per Action: 72.5.')
+                          
    }
  });
 
@@ -188,10 +191,9 @@
      if (message.content == '!vial of stench'){
        message.channel.send('__**Vial of Stench Recipe**__\n'+
                             'Irit & Chopped Onion.\n'+
-                            'Req Herb Lvl: 46.')
+                            'Req Herb Lvl: 46.\n'+
+                            'Exp Per Action: 0.')
        
-       
-     
      }
    });
 
@@ -200,7 +202,8 @@
    if (message.content == '!goblin potion'){
      message.channel.send('__**Goblin Potion Recipe**__\n'+
                           'Toadflax & Pharmakos Berries.\n'+
-                          'Req Herb Lvl: 37.')
+                          'Req Herb Lvl: 37.\n'+
+                          'Exp Per Action: 85.')
      
    }
  });
@@ -217,7 +220,9 @@ bot.on('message', (message) =>{
                           'Cantadine & White Berries > Super defence & Lantadyme > Extreme defence\n'+
                           'Dwarfweed & Wine of zammy > Super ranging & 5 Grenwall spikes > Extreme range\n'+
                           'Lantadyme & Patato cactus > Super magic & Ground mud runes > Extreme magic\n'+
-                          'Extreme strength & Extreme attack & Extreme defence & Extreme range & Extreme magic > Overload')
+                          'Extreme strength & Extreme attack & Extreme defence & Extreme range & Extreme magic > Overload\n'+
+                          'Exp Per Action: 1000.')
+                         
 
   }
 });
@@ -230,7 +235,8 @@ bot.on('message', (message) =>{
                           'Cantadine & White Berries > Super defence & Lantadyme > Extreme defence\n'+
                           'Dwarfweed & Wine of zammy > Super ranging & 5 Grenwall spikes > Extreme range\n'+
                           'Lantadyme & Patato cactus > Super magic & Ground mud runes > Extreme magic\n'+
-                          'Extreme strength & Extreme attack & Extreme defence & Extreme range & Extreme magic > Overload')
+                          'Extreme strength & Extreme attack & Extreme defence & Extreme range & Extreme magic > Overload\n'+
+                          'Exp Per Action: 1000.')
 
   }
 });
@@ -243,7 +249,8 @@ bot.on('message', (message) =>{
                           'Cantadine & White Berries > Super defence & Lantadyme > Extreme defence\n'+
                           'Dwarfweed & Wine of zammy > Super ranging & 5 Grenwall spikes > Extreme range\n'+
                           'Lantadyme & Patato cactus > Super magic & Ground mud runes > Extreme magic\n'+
-                          'Extreme strength & Extreme attack & Extreme defence & Extreme range & Extreme magic > Overload')
+                          'Extreme strength & Extreme attack & Extreme defence & Extreme range & Extreme magic > Overload\n'+
+                          'Exp Per Action: 1000.')
 
   }
 });
@@ -253,7 +260,8 @@ bot.on('message', (message) =>{
    if (message.content == '!attack potion'){
     message.channel.send('__**Attack Potion Recipe**__\n'+
                          'Guam & Eye of Newt.\n'+
-                         'Req Herb Lvl: 1.')
+                         'Req Herb Lvl: 1.\n'+
+                         'Exp Per Action: 25.')
    }
  });
 
@@ -262,7 +270,8 @@ bot.on('message', (message) =>{
     if (message.content == '!ranging potion'){
      message.channel.send('__**Ranging Potion Recipe**__\n'+
                           'Guam & Redberrys.\n'+
-                          'Req Herb Lvl: 3.')
+                          'Req Herb Lvl: 3.\n'+
+                          'Exp Per Action: 30.')
       
     }
   });
@@ -272,8 +281,9 @@ bot.on('message', (message) =>{
    if (message.content == '!magic potion'){
      message.channel.send('__**Magic Potion Recipe**__\n'+
                           'Tarromin & Black, Red, Yellow, and White Beads.\n'+
-                          'Req Herb Lvl: 5.')
-     
+                          'Req Herb Lvl: 5.\n'+
+                          'Exp Per Action: 35.')
+                          
    }
  });
 
@@ -282,7 +292,8 @@ bot.on('message', (message) =>{
    if (message.content == '!strength potion'){
      message.channel.send('__**Strenghth Potion Recipe**__\n'+
                           'Tarromin & Limpwurt Root.\n'+
-                          'Req Herb Lvl: 7.')
+                          'Req Herb Lvl: 7.\n'+
+                          'Exp Per Action: 40.')
      
    }
  });
@@ -292,7 +303,8 @@ bot.on('message', (message) =>{
    if (message.content == '!defence'){
      message.channel.send('__**Defence Potion Recipe**__\n'+
                           'Marrentill & Bear Fur.\n'+
-                          'Req Herb Lvl: 9.')
+                          'Req Herb Lvl: 9.\n'+
+                          'Exp Per Action: 45.')
      
    }
  });
@@ -302,7 +314,8 @@ bot.on('message', (message) =>{
    if (message.content == '!antipoison'){
      message.channel.send('__**Antipoison Recipe**__\n'+
                           'Marrentill & Unicorn Horn Dust.\n'+
-                          'Req Herb Lvl: 13.')
+                          'Req Herb Lvl: 13.\n'+
+                          'Exp Per Action: 50.')
      
    }
  });
@@ -312,7 +325,8 @@ bot.on('message', (message) =>{
    if (message.content == '!restore'){
      message.channel.send('__**Restore Potion Recipe**__\n'+
                           'Harralander & Red Spiders\' Eggs.\n'+
-                          'Req Herb Lvl: 22.')
+                          'Req Herb Lvl: 22.\n'+
+                          'Exp Per Action: 62.5.')
      
    }
  });
@@ -322,7 +336,8 @@ bot.on('message', (message) =>{
    if (message.content == '!combat'){
      message.channel.send('__**Combat Potion Recipe**__\n'+
                           'Harralander & Goat Horn Dust.\n'+
-                          'Req Herb Lvl: 36.')
+                          'Req Herb Lvl: 36.\n'+
+                          'Exp Per Action: 84.')
      
    }
  })
@@ -332,7 +347,8 @@ bot.on('message', (message) =>{
    if (message.content == '!prayer potion'){
      message.channel.send('__**Prayer Potion Recipe**__\n'+
                           'Ranarr & Snape Grass.\n'+
-                          'Req Herb Lvl: 38.')
+                          'Req Herb Lvl: 38.\n'+
+                          'Exp Per Action: 87.5.')
      
    }
  });
@@ -424,5 +440,14 @@ bot.on('message', (message) =>{
     message.channel.send('__**Super Magic Recipe**__\n'+
                           'Lantadyme & Patato cactus.\n'+
                           'Req Herb Lvl: 76.')
+   
   }
 });
+
+/*Super Anti-Posion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!super anti-poison'){
+     message.channel.send('__**Super Anti-Poison Recipe**__\n'+
+                          'Irit & Unicorn Horn Dust.\n'+
+                          'Req Herb Lvl: 48.\n'+
+                          'Exp Per Action: 106.3.')
