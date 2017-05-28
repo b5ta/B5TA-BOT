@@ -11,8 +11,7 @@
 //    }
 //  });
 //
-/*Overload Recipe*/
-//ovl, ovls, and overload are excepted
+
 
 //////////////////////////////////////////////////////
 ///       CRAFTING POTIONS            ////////////////
@@ -183,6 +182,8 @@
 //////////////////////////////////////////////////////
 ///       COMBAT POTIONS            ////////////////
 //////////////////////////////////////////////////////
+/*Overload Recipe*/
+//ovl, ovls, and overload are excepted
 bot.on('message', (message) =>{
   if (message.content == '!ovl'){
     message.channel.send('__**Overload Recipe**__\n'+
