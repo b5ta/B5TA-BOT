@@ -230,7 +230,7 @@ bot.on('message', (message) =>{
                           'Req Herb Lvl: 36.')
      
    }
- })'
+ })
 
 /*Goblin Potion Recipe*/
  bot.on('message', (message) =>{
