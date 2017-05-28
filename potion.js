@@ -23,7 +23,7 @@
    if (message.content == '!relicym'){
      message.channel.send('__**Relicym\'s Balm Recipe**__\n'+
                           'Rogue\'s Purse & Snake Weed.\n'+
-                          'Req Herb Lvl: 8.\n+
+                          'Req Herb Lvl: 8.\n'+
                           'Exp Per Action: 40.')
      
    }
