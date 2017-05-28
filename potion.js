@@ -7,7 +7,8 @@
 //    if (message.content == '!POTION_NAME'){
 //     message.channel.send('__**POTION_NAME Recipe**__\n'+
 //                          'POTION_RECIPE.\n'+
-//                          'Req Herb Lvl: #.')
+//                          'Req Herb Lvl: #.\n'+
+//                          'Exp Per action: #.')
 //    }
 //  });
 //
@@ -22,7 +23,8 @@
    if (message.content == '!relicym'){
      message.channel.send('__**Relicym\'s Balm Recipe**__\n'+
                           'Rogue\'s Purse & Snake Weed.\n'+
-                          'Req Herb Lvl: 8.')
+                          'Req Herb Lvl: 8.\n+
+                          'Exp Per Action: 40.')
      
    }
  });
@@ -32,7 +34,8 @@
    if (message.content == '!serum'){
      message.channel.send('__**Serum 207 Recipe**__\n'+
                           'Tarromin & Ashes.\n'+
-                          'Req Herb Lvl: 15.')
+                          'Req Herb Lvl: 15.\n'+
+                          'Exp Per Action: 50.')
      
    }
  });
@@ -42,7 +45,8 @@
    if (message.content == '!guthix rest'){
      message.channel.send('__**Guthix Rest Recipe**__\n'+
                           'Harralander & Marrentill.\n'+
-                          'Req Herb Lvl: 18.')
+                          'Req Herb Lvl: 18.\n'+
+                          'Exp Per Action: 59.5.')
      
      
    }
@@ -53,7 +57,8 @@
    if (message.content == '!guam tar'){
      message.channel.send('__**Guam Tar Recipe**__\n'+
                           'Guam & Swamp Tar.\n'+
-                          'Req Herb Lvl: 19.')
+                          'Req Herb Lvl: 19.\n'+
+                          'Exp Per Action: 30.')
      
    }
  });
@@ -63,7 +68,8 @@
    if (message.content == '!guthix balance'){
      message.channel.send('__**Guthix Balance Recipe**__\n'+
                           'Restore Potion \(3) Garlic & Silver Dust.\n'+
-                          'Req Herb Lvl: 22.')
+                          'Req Herb Lvl: 22.\n'+
+                          'Exp Per Action: 50.')
      
    }
  });
@@ -73,7 +79,8 @@
    if (message.content == '!blamish'){
      message.channel.send('__**Blamish Oil Recipe**__\n'+
                           'Harralander & Blamish Snail Slime.\n'+
-                          'Req Herb Lvl: 25.')
+                          'Req Herb Lvl: 25.\n'+
+                          'Exp Per Action: 80.')
      
    }
  });
@@ -83,7 +90,8 @@
    if (message.content == '!energy'){
      message.channel.send('__**Energy Potion Recipe**__\n'+
                           'Harralander & Chocolate.\n'+
-                          'Req Herb Lvl: 26.')
+                          'Req Herb Lvl: 26.\n'+
+                          'Exp Per Action: 67.5.')
      
    }
  });
@@ -93,7 +101,8 @@
    if (message.content == '!marrentill tar'){
      message.channel.send('__**Marrentill Tar Recipe**__\n'+
                           'Marrentill & Swamp Tar.\n'+
-                          'Req Herb Lvl: 31.')
+                          'Req Herb Lvl: 31.\n'+
+                          'Exp Per Action: 42.5')
      
    }
  });
@@ -103,7 +112,21 @@
    if (message.content == '!super fishing explosive'){
      message.channel.send('__**Super Fishing Explosive Recipe**__\n'+
                           'Guam & Rubium.\n'+
-                          'Req Herb Lvl: 31.')
+                          'Req Herb Lvl: 31.\n'+
+                          'Exp Per Action: 55.')
+    
+   }
+ });
+    
+/*Fishing Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!fishing potion'){
+     message.channel.send('__**Fishing Potion Recipe**__\n'+
+                          'Avantoe & Snape Grass.\n'+
+                          'Req Herb Lvl: 50.\n'+
+                          'Exp Per Action: 112.5.')
+                          
+
      
    }
  });
@@ -113,7 +136,8 @@
    if (message.content == '!agility potion'){
      message.channel.send('__**Agility Potion Recipe**__\n'+
                           'Toadflax & Toad\'s Legs.\n'+
-                          'Req Herb Lvl: 34.')
+                          'Req Herb Lvl: 34.\n'+
+                          'Exp Per Action: 80.')
      
    }
  });
@@ -123,7 +147,8 @@
    if (message.content == '!tarromin tar'){
      message.channel.send('__**Tarromin Tar Recipe**__\n'+
                           'Tarromin & Swamp Tar.\n'+
-                          'Req Herb Lvl: 39.')
+                          'Req Herb Lvl: 39.\n'+
+                          'Exp Per Action: 55.')
      
    }
  });
