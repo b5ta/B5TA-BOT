@@ -829,6 +829,99 @@ bot.on('message', (message)=>{
                         )
   }
 });
+
+//////////  MEDIUM_LEVEL_BOSSES   /////////////////////////////////
+//Corporeal_Beast
+bot.on('message', (message)=>{
+  if (message.content == '!boss-corp'){
+    message.channel.send('__**Corporeal Beast**__\n'+
+                          'The Corporeal Beast is the physical incarnation of the Spirit Beast, and is a very powerful boss monster,'+
+                          ' and requires completion of the quest Summer\'s End to fight.\n'+
+                          'After completing the quest Summer\'s End you can use the games neckalace to tele you to his caves.'+
+                          '  Its most noteworthy defensive attribute is that it has 50% damage reduction against all non-spear weapons;'+
+                          ' attacks from most other sources, including poison, only deal half damage.\n\n'+
+
+                          'For a strategy guide visit <http://runescape.wikia.com/wiki/Corporeal_Beast/Strategies>\n\n'+
+
+                          'For more on this boss enter the command **boss-corp more**\n\n'+
+
+                          '__Preffered Combat Style__: Melee\n\n'+
+
+                          '__**Gear Setup**__:\n'+
+                          'More Effective >  Less Effective \n\n'+
+
+                          '__*Armour*__\n'+
+                          'Malevolent helm	> Torva full helm	> Anima Core helm of Zaros >Superior tetsu helm\n'+
+                          'Amulet of souls >	Reaper necklace >	Brawler\'s blood necklace >	Saradomin\'s whisper\n'+
+                          'Malevolent cuirass >	Torva platebody >	Anima Core Body of Zaros >	Superior tetsu body\n'+
+                          'Malevolent greaves >	Torva platelegs >	Anima Core Legs of Zaros >	Superior tetsu platelegs\n'+
+                          'Goliath gloves >	Razorback gauntlets >	Torva gloves >	Pneumatic gloves\n'+
+                          'Emberkeen boots >	Torva boots >	Steadfast boots >	Bandos boots\n'+
+                          'Max Cape > Skill Cape > Obsidian Cape\n\n'+
+
+                          '__*2h Weapon*__(recommended)\n'+
+                          'Superior Vesta\'s spear > Mizuyari >	Choatic spear >	Sun spear >	Zamorakian spear'
+                        );
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!boss-corp more'){
+    const embed = new Discord.RichEmbed()
+      .setColor(0x00AE86)
+      .setImage('https://www.runehq.com/image/specialreports/corpbeasthunting/actionbar.png')
+    message.author.send('__**Corporeal Beast (more)**__\n\n'+
+
+                        'The Corporeal Beast is unique in that its armour will reduce incoming attacks by 50%, apart from spears which do full damage. '+
+                        'It will also devour any familiars apart from the clan avatar, healing from them if the Beast has taken any damage.\n\n'+
+
+                        '__**ATTACKS**__\n\n'+
+
+                        '-Melee attack: A swipe or lunge at the player. Hits 3000 maximum.\n\n'+
+
+                        '-Magic attack\n'+
+                        '   -Hard hitting: A large magical orb. Hits around 5000 maximum.\n'+
+                        '   -Stat drain: A small, faint looking white orb. Should it hit more than 0, it will drain one of these stats: Magic, Summoning or Prayer.\n'+
+                        '   -Multi-split: It is very similar to the Beast\'s attacks in Summer\'s End. This attack can be avoided by simply moving out of the way.\n\n'+
+
+                        '-Dark core: The Beast summons a Dark energy core. '+
+                        'If you\'re within a 3x3 radius (the tile the core is on and 1 tile in any direction), it will deal rapid damage (from 150-600) to any nearby players,'+
+                        ' sending this damage into health for the Beast and also draining prayer points from the players who are hit by the core.\n\n'+
+
+                        '__**STRATEGIES**__\n\n'+
+
+                        'When killing the Beast, players must note that all non-spear weapons will deal only 50% damage.'+
+                        ' Therefore, the most popular weapons to use are the Mizuyari, and the chaotic and Zamorakian spears.'+
+                        ' The Vesta\'s spear can be used since its charges in combat has increased significantly and if upgraded it is the best in slot weapon for Corporeal Beast.\n\n'+
+
+                        '**Protect/Deflect Magic prayer should be used**\n\n'+
+
+                        'When using a melee setup, hold Hurricane, Quake, and Cleave for when the core spawns.\n'+
+                        'Since these three abilities can hit the square under you, it is possible to kill the core without diverting attention from the Beast.\n\n'+
+
+                        'Here is and example actionbar' ,{ embed });
+
+
+    message.author.send('__Preffered Combat Style__: Melee\n\n'+
+
+                        '__**Gear Setup**__:\n'+
+                        'More Effective >  Less Effective \n\n'+
+
+                        '__*Armour*__\n'+
+                        'Malevolent helm	> Torva full helm	> Anima Core helm of Zaros >Superior tetsu helm\n'+
+                        'Amulet of souls >	Reaper necklace >	Brawler\'s blood necklace >	Saradomin\'s whisper\n'+
+                        'Malevolent cuirass >	Torva platebody >	Anima Core Body of Zaros >	Superior tetsu body\n'+
+                        'Malevolent greaves >	Torva platelegs >	Anima Core Legs of Zaros >	Superior tetsu platelegs\n'+
+                        'Goliath gloves >	Razorback gauntlets >	Torva gloves >	Pneumatic gloves\n'+
+                        'Emberkeen boots >	Torva boots >	Steadfast boots >	Bandos boots\n'+
+                        'Max Cape > Skill Cape > Obsidian Cape\n\n'+
+
+                        '__*2h Weapon*__(recommended)\n'+
+                        'Superior Vesta\'s spear > Mizuyari >	Choatic spear >	Sun spear >	Zamorakian spear'
+                      );
+
+  }
+});
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  WEEEWOOOO COMMAND
 bot.on('message', (message) =>{
@@ -890,7 +983,7 @@ bot.on('message', (message) =>{
 //          Herblore Recipes
 //***********************************************************************************************************
 //
-//
+// /*POTION_NAME Recipe*/
 //  bot.on('message', (message) =>{
 //    if (message.content == '!POTION_NAME'){
 //     message.channel.send('__**POTION_NAME Recipe**__\n'+
@@ -939,6 +1032,24 @@ bot.on('message', (message) =>{
 
   }
 });
+
+/*Attack potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!attack'){
+    message.channel.send('__**Attack Potion Recipe**__\n'+
+                         'Guam & Eye of Newt.\n'+
+                         'Req Herb Lvl: 1.')
+   }
+ });
+
+ /*Ranging potion Recipe*/
+  bot.on('message', (message) =>{
+    if (message.content == '!ranging'){
+     message.channel.send('__**Ranging Potion Recipe**__\n'+
+                          'Guam & Redberrys.\n'+
+                          'Req Herb Lvl: 3.')
+    }
+  });
 
 /*Prayer restore recipe*/
 bot.on('message', (message) =>{
@@ -1031,8 +1142,855 @@ bot.on('message', (message) =>{
 });
 
 
+//////////////////////////////////////////////////////////////////////////////////////
+// '**ACTIONBAR COMMANDS** //
+//
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar'){
+    message.channel.send('Please specify\n\n'+
+                          '!actionbar magic dualwield\n'+
+                          '!actionbar magic 2h\n'+
+                          '!actionbar range dualwield\n'+
+                          '!actionbar range 2h\n'+
+                          '!actionbar melee dualwield\n'+
+                          '!actionbar melee 2h\n'
+                        )
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar tank'){
+    message.channel.sendFile('./images/dualwieldmelee.jpg')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar magic dualwield'){
+    message.channel.sendFile('./images/dualwieldmage.jpg')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar magic 2h'){
+    message.channel.sendFile('./images/2hmage.jpg')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar range dualwield'){
+    message.channel.sendFile('./images/dualwieldrange.jpg')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar range 2h'){
+    message.channel.sendFile('./images/2hrange.jpg')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar melee dualwield'){
+    message.channel.sendFile('./images/dualwieldmelee.jpg')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!actionbar melee 2h'){
+    message.channel.sendFile('./images/2hmelee.jpg')
+  }
+});
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+//////////////     ABILITY BOT 3 TIERED ABILITY SEARCH          /////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//
+//
+//
+//
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// /*ABILITY_NAME ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!ABILITY_NAME'){
+//     message.channel.send({embed: {
+//                             color: 8421504,
+//                             thumbnail:{ url:'ABILITY_ICON_LINK'} ,
+//                             author: {
+//                             name: 'Defence',
+//                             icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+//                             },
+//                             fields: [
+//                             {
+//                             name: 'ABILITY_NAME',
+//                             value: 'Members: Yes	Level: 91	Type: Ultimate	Cooldown: 300	Equipment: None.'
+//                             }],
+//                             image:{ url:'ABILITY_DETAILS_LINK'}
+//                           }
+//                         }
+//                       );
+//   }
+// });
+
+
+/* !abilities COMMAND */
+bot.on('message', (message)=>{
+  if (message.content == '!abilities'){
+    message.channel.send('**Please specify which abilities:**\n\n'+
+
+                          '!abilities magic\n'+
+                          '!abilities range\n'+
+                          '!abilities attack\n'+
+                          '!abilities strength\n'+
+                          '!abilities defence\n'+
+                          '!abilities constitution')
+  }
+});
+
+
+///////////////////////////////////////////
+/*  CONSTITUTION ABILITIES  (still missing storm shards, guthix blessing, shatter, and reprisal.)*/
+bot.on('message', (message)=>{
+  if (message.content == '!abilities constitution'){
+    message.channel.send('**Please Specify which abitity**:\n\n'+
+
+                          '!ice asylum\n'+
+                          '!incite\n'+
+                          '!onslaught\n'+
+                          '!regenerate\n'+
+                          '!sacrifice\n'+
+                          '!siphon ability\n'+
+                          '!transfigure\n'+
+                          '!tuskas wrath\n'+
+                          '!special attack\n\n'+
+
+                          '!abilities constitution all')
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!abilities constitution all'){
+    message.channel.send({embed: {
+                        color: 3447003,
+                        author: {
+                        name: 'Constitution Abilities',
+                        icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                        },
+                        title: 'This is an overview of all constitution abilities',
+                        description: 'For more information on each ability use the name of the ability as the command.\n'+
+                                      'ex. !ice asylum',
+                        fields: [
+                        {
+                        name: 'Ice Asylum',
+                        value: 'Members: Yes	Level: 91	Type: Ultimate	Cooldown: 300	Equipment: None.'
+                        },
+                        {
+                        name: 'Guthix\'s Blessing',
+                        value: 'Members: Yes	Level: 85	Type: Ultimate	Cooldown: 300	Equipment: None.'
+                        },
+                        {
+                        name: 'Incite',
+                        value: 'Members: Yes	Level: 24	Type: Basic	Cooldown: 0	Equipment: Any.'
+                        },
+                        {
+                        name: 'Onslaught',
+                        value: 'Members: Yes	Level: 90	Type: Ultimate	Cooldown: 120	Equipment: Any weapon.'
+                        },
+                        {
+                        name: 'Regenerate',
+                        value: 'Members: Yes	Level: 10	Type: Basic	Cooldown: 0	Equipment: Any.'
+                        },
+                        {
+                        name: 'Reprisal',
+                        value: 'Members: Yes	Level: 85	Type: Threshold	Cooldown: 60	Equipment: None.'
+                        },
+                        {
+                        name: 'Sacrifice',
+                        value: 'Members: No	Level: 10	Type: Basic	Cooldown: 30	Equipment: None.'
+                        },
+                        {
+                        name: 'Shatter',
+                        value: 'Members: Yes	Level: 70	Type: Threshold	Cooldown: 120	Equipment: Any.'
+                        },
+                        {
+                        name: 'Siphon',
+                        value: 'Members: No	Level: 20	Type: Basic	Cooldown: 60	Equipment: Any.'
+                        },
+                        {
+                        name: 'Storm Shards',
+                        value: 'Members: Yes	Level: 70	Type: Basic	Cooldown: 30	Equipment: Any weapon.'
+                        },
+                        {
+                        name: 'Transfigure',
+                        value: 'Members: No	Level: 10	Type: Ultimate	Cooldown: 180	Equipment: None.'
+                        },
+                        {
+                        name: 'Tuska\'s Wrath',
+                        value: 'Members: Yes	Level: 50	Type: Basic	Cooldown: 120 or 15 Equipment: None.'
+                        },
+                        {
+                        name: 'Weapon Special attack',
+                        value: 'Members: Yes	Level: 10	Type: Special	Cooldown: 0	Equipment: Special attacks.'
+                        }
+                        ],
+                        timestamp: new Date(),
+                        footer: {
+                        icon_url: bot.user.avatarURL,
+                        text: '© B5TA BOT'
+                        }
+                        }
+                        });
+  }
+});
+
+//INDIVIDUAL ABILITIES//(still missing storm shards, guthix blessing, shatter, and reprisal.)
+/*ice asylum ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!ice asylum'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/__lISDeQ3mrD6B2PDTJQd8Fy42fiu4iEx2TzZ44aG0AAIxoFYiTFc85pa2TV1Oi-u_bSUf267H7lRfW4WARhuaTqg6DHnBiWABXYw6k5jWlIevd0I1XCl3iY_2WbASQIB-OvjFXYWy8nLG9-B2Ld4rushXWlAqV1JaLVOuX1KzsSQ62W29WPnHd9mBNiBcxKVIh_HXFF36W8PmDTkMxStK5nkwVVzvzKzkfZerBoU7wke0WtOp9YpvMsd_fm3jVkb1up7E-TlSkN0xXCtUGOtklggR8ImpPZ_cKFKdUHyQwyi5ScLtJf04ffpF5C0CIIcJLTRxug0ZVCDnMsss4-KSlSeCWcm4OWrVVU9VRav627GK1tMnn6InDfSlw0TkZw4B61rq-q-NPWZ0TD6mjhG5SXGtqgQP4c47chNuf1BXczL3D-O8yAT_ouvubFc_WLI0oWRv-9ss9_kGsF9sKaGEglZmQzUFYwL1khVMufwcQVuKNsGmDShW9QoO1VDWIGUUVaJFvtVt0RMKfVTrkuxM7ZrZSM0TQD2rlr-2d-iRXQxf1R7drihlFRW26pRikqvaFoQ0jZbBEPUxOOsCXz8UTovj9bZIV0HHT6SaX_KDtTvs04TR-V=w33-h34-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Ice Asylum',
+                            value: 'Members: Yes	Level: 91	Type: Ultimate	Cooldown: 300	Equipment: None.\n'+
+                            'This ability is learned by reading the Codex Ultimatus, which is obtained by talking to the archaeological expert after completing The Dig Site quest.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/BD0P0uMC6phf92M5Hb_6ixPnQD3i-BzB_j6QpjDVDkp0Ol23WYv87uVQsAAvvv1jPGO7i2ZadrVpNHpZzjqRef0pzJhsB-lFm6tIxNXcOCU7cc2SkwrxvANkJDeo1ud4pWj1_jWFRSkBaASRwCBiB_BwToaWaPS8cHH5xiPnjV6zbwuvfickox4dZ7kcm7idddsgxc_YoDeyOMPS1KIGH13lvWDpccdw4hoWAw5oTBjhvcKrgN0Yp6PDwD2dsU33PhvPEbFx7V3Sqaz7rZzIRCuy0jYvVfCWoYWhnkjeKhHI0FsRKMReIGrdX-Zbv6hwsjirKsvVKtBwPRaf8JfLAU6YwKxpCk5C6bK7XDQz9QvkGYndaRtEoEe6EzS-u21zVIB0zQjiYZ5fqhAeB3mX9YcrENimqbYetYi79bFD9y6vL0MdI_g2qbCO87FHoauzNfgOAuHVDWMaEcSj6Or_Uaq3ZOOEL7t-8q3gAfjmg8yOsFYpe_zym79nAmJ7K6WhQ2N_6ZZwRvH00Qv918uPH8K8QrnNhZNRiuFtrWzX_UfWY2ZMy65CNmCaYlw5MAcaFRkL1h-TQdC-oPxboUFfYM6nhbYd8Q4MYPQYgD_4ayTLhldwMZBC=w256-h234-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+
+/*incite ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!incite'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/JIMC4flOqsHYNOtySidLs3RIkM1J3Mp6ZlK91U_g1HYAJe_7GtcEDfWuLna8kXQWDW8GYnvZejs1Sf4GakMUoB8SSlU5MqkX8Yb64qMXWwVTtZa6KV88eVUHk6_nptxhBh6an9j1Lp_HoHaQHM1Ycrqv-Q__MVPHm7MukVghPl6ZVJ0zS-5uUjEG_MHxggciiVV0F04jyKNEDuBAVeYi4QOQwsAhXsbdcKscv1xarEJvnJ341J-wTwIcYrbj67yeD8dWV1BW-h0LZR50Q-jugKoDg5ckRHkQOhftySlRm52utFBS39qISdx4hTcaVWo0EQEdOHEF9BNn28EDUi3O4xv1-Ei2lwRi0gfqRIqDy0koWehatbJd80A7FSyYGQhCCIg05kuEpwl_h1L3g51HK1QrzW9IoJgjjgsTSkZikGr21CKWiMF6GPIy6k01v6QwY_cBSnzIyDSlK6A6oTXgKnp5UxjdsaNiy9Fvvj4IaU42mez4Y5n0mpvnz1tZcXypc7BWXRtkKzVZ_74wYeHe2oFrKBAB9tbdw3-p1JJFflrQWAzgj_5QmR8ynt7ffXX0f8uzXlIeytt1a-h-jpcOBRTkUzUOpKC9_LVhGNKSbvQ9eBWddZ_6=w37-h32-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Incite',
+                            value: 'Members: Yes	Level: 24	Type: Basic	Cooldown: 0	Equipment: Any.'
+
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/s_d-GnrXnsObJE1WpgSANXiCLWAGSfYpuibh74pSgmXtZG-1fm4Kpjk3hUU9D2CnmVc90-E1YEqUrpEoE48TZr8tIQd2pzCT8o-d_Ts3-MjIzXrhUAmCBtb-z9s6TbVC1_ske3rVyVFTAoydRJCz8OUEzPN-7oFAxQoX0MYqBm0H8Kx2CjLzFznI7PTWM1tEi2PAbEA6Weufko9CsIK0YUsmjbcXkc4gX_kfCVPSvzsPmJvmgwFBbf5LVfvnlYAcfqU9wShGvgxgQUpeyUbbfbdXlb90PY7ICQx4OdKKG9swb8r11ZtUjurKieiAO19s_LVWi4_4STMvyN60TzEdNmi6TJ96a2Gd71iGRuFDQBk32xm9zppxNgnqQVHRcXr0R-euHeH9CpMq4WU_NiDXo9Ls0tuqxC2f0Eni4Oje1QSQalv6v_W8Zmxh5XiIFlVktQjhY--icBZ0Lzgb-wPUPXLVtjaI6uEclnTlHLUj_iuXIxT4cXNot-FA7Ikce5YIB3tmU18wvpHW3lHY7vCiilBzu8VVss-6TNq3X7Ap0zKLw_gQIdykK3S77Wq_pfCIX-AMpRZJ3fBXZ9f9KKWqHs1UJPxdtAvaniohSUwoQAzIIrJlI1-R=w251-h173-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*onslaught ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!onslaught'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/Dwb7nynvJQcBFsYiSAD4mIrYrcL1i7NZE786D9H7VOxl8hhXQNND1JhAMco9Ed67v_gedvs30GUaP-CYIcCPgbOCFkZJhZH97go3PKVjC0MDyiplv7VKd7Fqwh01-gCmWAS-87ualCEd2kz-y-5JYk-jHKUFLdBHaRMg0xk37MzBIwRZSOljc5csXAj_aA2ETDCl8vhHp09Dq5NaQIKvTAbo6h-vE54pMx78aE8o2HP7Vs9geP0B0valrfAuURzV0kue224vb3qySMeY2qB0VUbi90kZUNMd8qAB-O5-ASOBpIEdQNSk-GhUOEERbvDTFGtr85K0wJs_ywVlnkOjtJQuFlXc8WoVw1owFHvKDvdeN9pvi9t7xYLuSnRIRxqaQVl2ujLgQ5vT1rEuWooZgrqec2F5IRh5pRgN8ReoWQs6d0iyCZAa3S-vghxwonnLzoKBVQ5ESOeSBSHlPgzablH_jCph01_ak7q5u1QGbGpWsRzLnuempgzTERqWsRqzfSuQZ7ao1JuITv6WmSCy5vT9pJ0Q45AXrwWc2u1ICdGl5ny_mRyZbT6aglfNgUOtpOLPIQUUNbPTob9csrbCGttlJ-SscjeG3_PtoUS4-B0eVElSHXjR=w34-h33-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Onslaught',
+                            value: 'Members: Yes	Level: 90	Type: Ultimate	Cooldown: 120	Equipment: Any weapon.\n'+
+                            'Onslaught is a channelled ability, unlocked through Raids from either the untradeable Onslaught Ability Codex, or the tradeable Mazcab ability codex. As a Mazcab ability, Onslaught has a damage cap of 30,000 per hit.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/HvvN14pW6K5ggv-jkEWTpmUQR-gEHTMstBUDZKuIBF3PbESBqeIu0Vpfxw2nUr74adbGvEjKBwPF06le8n3tY6OreIQS6ezX6howMxHxIzbYuiabbmKbTAUUB7F85_NYiuD6BqEl9gJ_I_kPd1LlYZTcfaQJii-3-qmWpxUtJlZu_sFXmJ_4xu3oUmpC97uYALY6E5glGTjv8N8cjNwWUwmdtcmMEJ91A9g4dkfjO6Ik9D3i_Nrj1YQ9OxP2dwbIz1LO_nuWpXmj3R-ec9vh6UB60zI-z09Xs_KCtoECcXnbxTQhUO987jU1A9-ho0jjhP5audWEb0tg19VHKNAlNNyTLxtFouM7tbAoLGLSggUw7aji6JqyVBZQgIwsmECWihUajX1R-W0iKIXEqkV3G0oQAj0eH2jEoGCQIcsOBDDafX6PizwXGLVhQ9eqckBHvd5j8AKzfvWWf4H9DcVJ4VmsgZFtk5NtXifpUXdlpc2a7lgFn_59pUiUe9mLpC2lY9Vhpyft-FZrhVhijuwdwuGo_Qwmj7bDaSS8Wr5eOiZeQN-B3SmIp00QabEejfU_RpYZQJOZPbEmbZKcLONyq98CEbyYkOBo-pwMeIu829Lpdo--vg-1=w254-h232-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*regenerate ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!regenerate'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/NPIQWyjFDbl0zzOReRRNorVLZP1xnmSXfQRWjdIEB05Z-VLceJ9iNceV1llTj4F-SbXCZhfTFFjx4siEYZFTFvHIuzqbY_QT0TqDPLVrGT3JHnTwAQic7lWjeiA5eB7DJpPrc1vwdmXMiZK-4oj-b1KmdTHqKV1pUFd4NIzqYtq80H1bTeJbEmRwSJyCnhkjMbyo_xIH_vv6NevHKLQu4qUaHF4gD24QBV_UPQEvud9vORDWHVRLCwkD2iFROhYlLfap55pWUbtULyUBKQRp92zK-xjCgGe-OFlBa7Gfio_kwS1wCnGKFja_1wVgeNXm0V5wrNlg9oqsE5x2IbXDhlHj2kBhqsisqHPeVSSUbCwliBEbGc68iWVaeJs1QQc3UYg1HUu-Fbawcsuj7-Dnwi2AAT0COwDNKKnka7PF1IN4wztedSQyS42uQraXskhp68ZBJlDm78poQOe-7dmkfVDbsPy2xU_fbyYp8zyGs_VDcx2NCohhDeh6RBENkiaWSfegb5MaNbB7SIuByhkzS6N5rJYPYgP-8B99OSjdp7Qcme70dP3F-VWa4L560oHoIvaulu6d_C11yxRmSoHsrHJxPydSE6Y2eUiUluTOWlvs-jNScl6U=s34-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Regenerate',
+                            value: 'Members: Yes	Level: 10	Type: Basic	Cooldown: 0	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/ONYZ-kRa3-08Mdb4y6o6QqsriK8mTGgD0wkxl-aft42Hbx-jDrDaY3GvcqNsMZpAW44KRirJAdSRUi8f3zjwAFcy9zepTBQnZnzoZiMM-MsxIUzWfSXuh9xUayAZiqv89nHj_FxMTjh8J5mL18haRzDlGn_O_iqKeABGQ3_ssk9DNgGta54F4dC3UhQY8NNAYLreuvDxcGX7OQ6xoUQAx0xR0TfpJvLE8gQwDS9wjdHW8zJwCelPwn31_q5dvxqYEndtAF9otdGt53BKJGxgs_q3o2tzXif66-EXSLiOfqNKwGQuVBFz2DK1O5LEdfkjbu6tUwVn-qJTCLxhtPTtmDnUCnq_TVCS7yNjvAJkwNG8dWhDTrNu-r9LMowpi1YzOGsdaF7M2b4Y-9ogPh3dTcJZ5GhHFQIyqzUqtYT6C0SC_4AalQkwL4I3YIpZMkpeCqLxZlIywYGtMwSQ_fp1SgOa2vnCute0v1RvTbiRk-dggiLxroj6ze-w61hQEmHp-S31tr08K08Ul9nG_oPj7EElQZZR9bOYcS3-RGieARAGuUgMPRUm_5Jg2PbebZShxtIS_7q_wzTRHNUDfp6u6yklv5OKKcbUdyjKJmCHm3redxd-0O0J=w255-h182-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*sacrifice ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!sacrifice'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/5ONDWzEJd57hhkqahy9gasHAX4W6ja0jOBKnfgxrVIujenwyBBCGf7YqZYZy354l3YmDO7qmLPWATENGLfSv6X8maVwW6tajYLJsOzwdPF2QU3etfnbLf5OAoP5_-V7hEbqE7H8SAjlcmuRXPQrCGt5xC1Dhr1RRy51J9iUaOBD1ntXQur41cMb4DI5tv4biNLn5KijHZlgSAyT_mmr5RvpPMUj-VkJ1upNLVyUvXs_p5-8sCyI16piNPLNGLled1zWySnMC7iBqBC5Na-svb3ZaekQyZUgLeKq1ZSO6b2TQUQ1_0w_7e-gcozHTUFksz4fZZ7dQI6H-jKQ1VzLrGg-b8veHDIJASqKqL0FqnLpWIj1ZJbNFQB0Syp2SgGw4Ko9DCLcA0h5Cs-SVQHrqdEibEc5QsssLt_cMM4dbJ9prHwgHwkScKlLZSbMHa0Rja-lnDqqZFtl-cVWithj0kx0unu_1E_npmn6vfh3yMZ6SqxfQ7q-TjssXvbsm2UzEaUOhA5FE0e_A0xJXh44adv5a7_5691dzEK3ymfyBrAFoEe6tB27AVUKTUhusGVB3M31FpmFlnNWeR1R-fM-Yiua34-e_CE82m_h1eQCgzNgwcb6SnlOh=w32-h31-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Sacrifice',
+                            value: 'Members: No	Level: 10	Type: Basic	Cooldown: 30	Equipment: None.\n'+
+                            'This ability can be obtained as a rare drop from General Graardor and Kree\'arra. It is also obtainable from their bodyguards.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/5y4pPcFRPYwgAYDCWUeJIwpebL2n7xHQK6Rb77Paz7fq5xzN0arpqWXs9lPZda0jeR2-SBp2Rd1nPaQSxLa7A3o1hmhIejFzGbp1sTNYdTjXBSzP3c0-F8YdkQIixjn10EmHPCJv3bgHcCBdMLJAV7q-wkNTzas8Ule3cNIE2wcBt3OuSdSyglSDy4YIpflge_n6K_Y8S4I0VRuk5zHyVm7P7yRSsBf3QpEyRpsqytadZ0K-aPbKsKj_XjAVoMc4y_aZ_NcOa7FNrbnGFTosrdoK4oGtYEzH2c10PcTEIntbVoWxaIEengkQJInCHVKs8iViXEWZTDl8VJG-9Edfm6bCIbmSRUqqmdnSsuR1VaojnHbL5cFfIv7MWN3FTb3WVCWiyCkm1Fgedf41GhBu5iKWQ5C3SZWv4GCkD3VkvZKaNPP1azC3cZZ5tuOKKYaIQ4UhlX932hBj7KbHt-iH14vvtnpcW9zmwSLVPHAaA6UFC8scsZEmUa55q0yGkgLnCp69SmiK-vfJeAym59RndKXYjzobaElohYYf94yYe7AdJJjaHiIs-PjSWwrrsdywvPQKwNbgYtTGW6Y_i6FHYWyRbYjSwQtS3F_3cYDRafXgnZoqMncU=w255-h170-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*siphon ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!siphon ability'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/nW0VJXGP84AY2pzRRcbf7XO79GHOZzzfZXboMWj_KeIyjbuy8e3OkZq5mumHWgyshbhbpugQAeh20F05s2nkw5lTvxVQvLk-vHYgYQFJe8wJc08WARTKhj3bEBIn2OOeJdMTywF8diLp6_j6UaNHpLKMjjXt8b-d8kWzj_VxIRbgOJTjb88MbMm-k8c6DJvmYbiQMQx8PVDTZanvRWwVcXspyfyyXIL2lv7Q0aTDusNFqickgoD2VgQEv-EstKsBEhq2RmKK6PldXowFQ3LK2ph-8PX_BeiXe9NUAcXBHzM-4utwW3UFBvFYNpulJ8BEIvEbSYmyx_NfDrOY6kOb2mjh-nDXbYy6L40xNDAVqc4xi6b50Vf3j9c-Pwef0LJ8xVA_UUURcp33ODfxoXph8ngFPq24HlTlsGhEjGDkxyl3CXeqgig9pfvgCORWBN5MH4jA32r0c2VLfKU0yZUjN-V_vX2YeOa2m0AEdY_FziKKD43XpUvhx9S9EuotCZybgrC6CS3hlSsLY9-6ouE_lM83dlPBuz57CTgbq49xrgCXIJrBWd1N5mkh_udwHxUPYm180twHmp0mS4F4SBICNj_2c7IBBrHX17VmDB-v7Pk438tARLMh=s33-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Siphon',
+                            value: 'Members: No	Level: 20	Type: Basic	Cooldown: 60	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/cLkhesUQIQH7kfEcFAjJ_XG_1RndESBZYCr9q9Zb0yh6HymcfnNiOwpIOFx2f4eiIjUXr4C7ftaWPRfl33E92xBhpTNgIdHCikDgVa03TJxAfV_Ci-ZEe8mi6xid4BLHNnYPR7p1qz4OrJRVLlHtmm1IvrfQwYcxntmUXlNRHdiERUcegFDJ-cLuAv1amt2GT6CElFLcWi4ACQIbezhlFiqMYL5QiAH-S-RQuSzDHf3yNmhkhivBdw87_Hz3EyaJmzRgaP_PKt9IJDRR8W19AahSKPOqZr21Amk2uXYVJvOj8qyDgjmD2DCaolmevwZlE7RJ0s2jpCdaFFQoStt9StHj0mTfcQHy3aRe0_JPJzOTc6eJ9Yr_aYhuxgq33Yi9eWCw85EZaQJCZw0FKSqd-NDOUMQYu6B08kDmRhrmKyFA9puYCroka23NVtBthOKwOoN4bHRHf_sVRq170htHHBzZPIyjoCCdV0aFfBLQiM9wjPbf0tltq_uOjB4wUU7ldD_FSbHkgATwyja8wS6dqhVemlNl_VXpTo0smj4Dv4EbVfbMvtzPEMsYFim64o1rK_pFwlg7c0YU1LQ-1EZ7eyFKNaxRfFIZJL9StzPyjsMxxVcsgJVa=w255-h162-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*transfigure ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!transfigure'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/B3cWO1D9GxhusrbsdaxJi0L3p4f8t-1KaTEiHsJ2tHGx3wAP5iHPLNXQvyPdxu4qZcO1DTN3Kw6_amXgecwR2p1mbi7eM6lv_E4kld9GWyIDayxZ_1s0fkAXaX-xplDBk5LVvptL-6B78sIQo5bBfH_MWuDJ9Vzwun_3yYP76erHq7dVqn0pf5sQ749SQlj-h5E6HXguigDlga2CsCA5m3u41KJCu2EvMaXbR7Bwq2hXeHHqtVb3X2tnp9eLrv2SMTNuKmRx9sjC8QB-GzUtZQd7cvMe57rpTAzJ7NUM68nGCUxUwQS7m3AzWEUkZT7sUuQ5czDYJuzVRql5Klx6QbrX-Nn2DkIYwVuB08cpY_etDk7S2WKl8gNVnKS9i-fOloX4ekLuXdY_rcunRBvAFfNdOqrE5NpEVoSg3VZ6R5q6v_LzLphYwGSW_clcvR32p1BLrQmA5VkIzTfQOA3Lo-_18_WOxpX25BLRAI8ZMP4XAhi46Wbu5mLfez1yS-3k0u6jlZk5lW9ro82Ts3-8WFRhkE76RjLswjdOBuXHZrFf2vy7iaYdomwD5yakrejzKBqyzbp7SG3DSE15ZA_K2xAo30cD3akX43xEhT7UXFQ3Am6z-8Ds=w33-h35-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Transfigure',
+                            value: 'Members: No	Level: 10	Type: Ultimate	Cooldown: 180	Equipment: None.\n'+
+                            'This ability can be obtained as a rare drop from General Graardor and Kree\'arra. It is also obtainable from their bodyguards.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/DTYNg5P7kK6L23tPj3KW82AHTN-5i6pD8FXajWlalNKnqMdHdvF2oPgp-8NlPoVyg67FT7zYjJ2_smIFT8wDR3Bowq2aUR1zaUJjrwGtIk99f5R_uvUcNJvZpPtLluGsfIHgX_ZrfzEZVZhDRpkGKf_WB1CzQWBoQEqMeagkcT3mgST-eBLsEXu2dAk8wQ6o-brw7E1175UhkcR-sVG7C1hBSnaVeUHOJK_-DS27KoxUghrPuT9qBT2SBQeq5Fk3aYmS0xt7ftyOPjHm5FvZ6ZSaj_Q46v4ooxQO9jYlY5vnrgZ3R715pJT7wUznPZFdMOMLasCg5LWXwWRMXxMH2e43n0bIQ9rmZ008CdsUhQ8aotm9H3ha_o3SMcMpKABri55Rm2Wsrg-HEqR7UuJIb8I992sS563Gzyyoc-0OLfLzAzBOOwME2ijbXnSiSf0N2DUZ9uUX5FDPtyiSGNx-1GNg1yRbQ-xnUvFm6Uyt9DFucfabaWpfflZELlW4TtYaICqHhPETwNBQiRkyKoywrrbi7p80ZEmSwij6yWw0He1GRGQwwgJmyfPlosuwGR_0sXZLDbNkHp5NnCtoK-6MApMsNLDKi2L3JV3JPLLcTHqW14SW-HwA=w252-h175-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*special attack ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!special attack'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/tI6_49IGkZKwVog81c6hchD0cq8quNf81YV8v47KCksHSAlcnU0_u3n2_CfF697frRwr4u4q6VaVgX9cW9sxZimFAWjEILE_YLhqoZOHjvau__arer40t0_ZVHhVykiNByvp9IEDmkQayGk5hZqBUmaLdMHN6mLrgpHZMl2ax9ng_nRjLoPVGzyc8OLlwDHFILUHLVhyd7ZrOqpiqo7VPUHLhvXlS7d_OindJ3GbN360-AwzusHfMOTudGByEKq3x9fqsNsJXitksITR2AE5TjbfLhZuMBNutfJkUoJTR8T2HSYHwG6kFnsF1CrpBYwGMawqoWLiwTjWM4oQtyJ5CSweXRantbvXGZGKqw3EjUxTuERgRV5M3MRh4UITjYDcAucoN-8T3kKYow1iD8pLMTnWdfRoTCS3fMy79g9en89ypb4V9YhDeRAJU4hPXE3dbOF6ajU6Nz2i-YnxgDM9v4JdypIKXogCT_xJryRw9W5DV_Yt2WIEPOkiItScNuJps0e5Lvd0yTDZTie3lGYLfaO1ZYsnFZFrEIaDNx7ozU1aW4B7qNVkVIKEQDuyw2js0guYQQwTysHx7ln_4I0CMI1cwaug0i6mNI0ZyTSgjTi_DpQLN3xB=w36-h35-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Weapon Special Attack',
+                            value: 'Members: Yes	Level: 10	Type: Special	Cooldown: 0	Equipment: Special attacks.\n'+
+                            'This ability can be used when a weapon offers a special attack.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/qzmg1WALpmRA-8AY-s8aA6-pxbHESsVScaka-DImoj3rPYBcQ6TAinX9GBNnX10o84-_UquncoHlPa6ZM4Q8kluU7APfrgcyTwNa1LKF93wToRQHFfoyuPa07KlFVyij8GYztIL03SHkR8QbiAbcR55g6Py4OBIFfS6XDNr3X4_X7jJ02HJuf0B51wa-bcAKlLGCHd8aqsIY5z_gQrMp8-0eaVm0JxHVeQki2iLmGc8_m_5MyUdVxNdCc6opMhM103jVe7jqLjgq5cx6bFSZgAUOZOeZrVK7B0DFW2aERSgTRVRcID1x0gt-bRb_1bSUfRtvOhYpMcKErpoUzRqx1Hh6UQ-y1_rPnGqxlZVcn6uBrYMUy8uY-fddId0Qgbx9d8gBhpYz0e12s8SB7UdvNF0l2ALA-EPCmzsJQGhEa0MTYx6f5Db3UdfiOkmlvvvrrzork_0jzu7AN9su3woKLv4yKL-KPjj7uWo2VQbdZe4tz8wi8gjrUcrfWP8Xt6LCPrnhSGwFvAEQdP3HUGz-2-OmFgSKC150TfCjLjxdZn48cXumtDMKmY0WP8_MipQIwPYLnpM3-85qYApBHLJdEF5kKEsexhPus30WowljXNto_zg6m3-e=w252-h164-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*tuskas wrath ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!tuskas wrath'){
+    message.channel.send({embed: {
+                            color: 14365765,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/O9EIiFZxZpXx6qwGHe8d1qRA-km5immSeJ_2K7kfU-TBlXhGn643YN9s6jCIBMXZXC4nSurp3GbxT9EXQok0GlSqQa0UoVa_OXIMEHhYwtGNAnVzSo3Z6mOUVP2X2SoWcGE4C_1t8rgfoAPG_43h-bOPXu3XXStWw5gsh9jMMwBhvOBx2Fn0xoqGgDtH_T-gMEzwSdY_Lx9_JZZ17qrxoI7ks0wD7Wlik4N6JeC3JW5-9ZfC05FkTJTqdqdiPXuV0dhWvo0KDsjbqR6dvd296sdiPSyu4ouvf10B_kpuOmjPhpUYEQ7_5CZ3jbIzhWXUZRu-tQQMFO8KKNmA0foaGQ8cz0U1DgeH_ndCkmEnZ8dDgMli1vxyg8ctfw0Gl-3hFowLJuc3RDRLTyGvSJj14qx0Y6gBo4ZZMFpg1kJne7JXi4EfiPg1hNOFoddy9G-o66TQyUSEEJ45sjUuPhQSs1SvYj_4Y4LckLQeI5tJUTYeQWzDtyW75vb9AQpe8ksu1w0bptkTW3EP-G4pJtd0UjxvX67jxnol3ckriieCSE7dqZnz8aCaMVlTW9qakZa_gYqLD4LatoOM81g1Pf3IjOeO6yOoez1dZrpUuQoRLoas99gQVICl=s30-no'} ,
+                            author: {
+                            name: 'Constitution',
+                            icon_url: 'http://rs336.pbsrc.com/albums/n360/archiz2/Runescape%20icons/Health.gif~c200'
+                            },
+                            fields: [
+                            {
+                            name: 'Tuska\'s Wrath',
+                            value: 'Members: Yes	Level: 50	Type: Basic	Cooldown: 120 or 15 Equipment: None.\n'+
+                            'Tuska\'s Wrath is a basic ability that can be purchased from the Anima Islands minigame reward shop for 4,000 Reward Currency from Wizard Chambers.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/5V1Rfy3V-TpbUSoMhUR6meJ1wAODqUNv_3MnHv3jaTlWK4rZwhyGza3uevssEMv8yHZK4TUwQC6QYARQGnXTygXwn5d8auWR7tt33bI6xsaC2hp4XpkDk21zMaJz7Mkr9nsMHVg1KzQveMZV8vBqR7X6_FqztX7KgyM2xBSyvSvnARN-sOVjSW1lN4SPgvJzbZLaeAdJFVhkpIVqBGFJ3hRbaMonQ_qVt0sk7Hy0dsGM-4_27ck8U-tBJ46nXVyqqb8draRfdDJXXhfdwmzc6A-cUhqzObnYuO-RDFdoCPYaFMDVjqLvHf2QqYd19qgRYgPYGOauctUzPmx-H4GOIaRPDcM1BF00o27X9hEUUXJ3Rl_wjE0_beSZ0s2fiemzfEVskxcwiwL5Zy8NKJ-KCVy6jSM2AQ-ondXSgzB1KffHob0GW96T1cE-p7Ldjfx32kZHG_Pc_FoO2iBeWcCGZF_yGq_-9rL5pA8uGjzjp952VxP7AY9e_nL41DZ846bsZTDxfCVA1yEawH7yg7bZ3GQU96bgj2NncpwT_BlmPrAyVb-c9ARlAWF0gDrYyyDnBnntWLCiIjA7vm5JmSleAG8aqzdsNbo-2LADpT6ZquObhCNa_v52=w256-h186-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+//
+// /*storm shards ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!storm shards'){
+//     message.channel.sendFile('./images/abilities constitution/iceasylumability.jpg')
+//   }
+// });
+//
+// /*guthix blessing ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!guthix blessing'){
+//     message.channel.sendFile('./images/abilities constitution/iceasylumability.jpg')
+//   }
+// });
+//
+// /*shatter ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!shatter'){
+//     message.channel.sendFile('./images/abilities constitution/iceasylumability.jpg')
+//   }
+// });
+//
+// /*reprisal ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!reprisal'){
+//     message.channel.sendFile('./images/abilities constitution/iceasylumability.jpg')
+//   }
+// });
+
+///////////////////////////////////////////
+/* DEFENCE ABILITIES */
+bot.on('message', (message)=>{
+  if (message.content == '!abilities defence'){
+    message.channel.send('**Please Specify which abitity**:\n\n'+
+
+                          '!anticipation\n'+
+                          '!barricade\n'+
+                          '!bash\n'+
+                          '!debilitate\n'+
+                          '!devotion\n'+
+                          '!freedom\n'+
+                          '!immortality\n'+
+                          //'!natural instinct\n'+
+                          '!preparation\n'+
+                          '!provoke\n'+
+                          '!reflect\n'+
+                          '!rejuvinate\n'+
+                          '!resonance\n'+
+                          '!revenge\n\n'+
+
+                          '!abilities defence all')
+  }
+});
+
+bot.on('message', (message)=>{
+  if (message.content == '!abilities defence all'){
+    message.channel.send({embed: {
+                        color: 3447003,
+                        author: {
+                        name: 'Defence Abilities',
+
+                        icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                        },
+                        title: 'This is an overview of all defence abilities',
+                        description: 'For more information on each ability use the name of the ability as the command.\n'+
+                                      'ex. !anticipation',
+                        fields: [{
+                        name: 'Anticipation',
+                        value: 'Members: No	Level: 3	Type: Basic	Cooldown: 24	Equipment: Any.'
+                        },
+                        {
+                        name: 'Barricade',
+                        value: 'Members: Yes	Level: 81	Type: Ultimate	Cooldown: 60	Equipment: Shield.'
+                        },
+                        {
+                        name: 'Bash',
+                        value: 'Members: No	Level: 8	Type: Basic	Cooldown: 15	Equipment: Shield.'
+                        },
+                        {
+                        name: 'Debilitate',
+                        value: 'Members: Yes	Level: 55	Type: Threshold	Cooldown: 30	Equipment: Any.'
+                        },
+                        {
+                        name: 'Devotion',
+                        value: 'Members: No	Level: 1	Type: Threshold	Cooldown: 60	Equipment: None.'
+                        },
+                        {
+                        name: 'Freedom',
+                        value: 'Members: No	Level: 34	Type: Basic	Cooldown: 30	Equipment: Any.'
+                        },
+                        {
+                        name: 'Immortality',
+                        value: 'Members: Yes	Level: 29	Type: Ultimate	Cooldown: 120	Equipment: Shield.'
+                        },
+                        {
+                        // name: 'Natural Instinct',
+                        // value: 'Members: Yes	Level: 85	Type: Ultimate	Cooldown: 120	Equipment: Any.'
+                        // },
+                        // {
+                        name: 'Preparation',
+                        value: 'Members: Yes	Level: 67	Type: Basic	Cooldown: 20	Equipment: Shield.'
+                        },
+                        {
+                        name: 'Provoke',
+                        value: 'Members: Yes	Level: 24	Type: Basic	Cooldown: 10	Equipment: Any.'
+                        },
+                        {
+                        name: 'Reflect',
+                        value: 'Members: Yes	Level: 37	Type: Threshold	Cooldown: 30	Equipment: Shield.'
+                        },
+                        {
+                        name: 'Rejuvenate',
+                        value: 'Members: No	Level: 52	Type: Ultimate	Cooldown: 300 or 15 Equipment: Shield.'
+                        },
+                        {
+                        name: 'Resonance',
+                        value: 'Members: Yes	Level: 48	Type: Basic	Cooldown: 30	Equipment: Shield.'
+                        },
+                        {
+                        name: 'Revenge',
+                        value: 'Members: Yes	Level: 15	Type: Threshold	Cooldown: 45	Equipment: Shield.'
+                        }
+                        ],
+                        timestamp: new Date(),
+                        footer: {
+                        icon_url: bot.user.avatarURL,
+                        text: '© B5TA BOT'
+                        }
+                        }
+                        });
+  }
+});
+
+//INDIVIDUAL ABILITIES//(missing naturual instinct)
+
+/*Anticipation ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!anticipation'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/q7YvKa5CgCbHOrBEg9QVIEr3xhZ4Ffnn2or_MaUJ_rLIiL005oM4LNu9kpiG4W0-eOfeQjUD2QYxl0xwd-8xrhVklsb62IZkV6CuJypZSdlnO4Zalpt6wORcb6GzjLicOLk8eQI6qrjvO2cdWBGz0GKUiHoyoidWrRhPsDbXYsaUdT0theqoRHLAkVyEXQM3ifRWCR_wkOOlgpsnrzbyK14LH77p3GEjaGYcaI7UJOYom2D_O-qLcmAFIZjQmuR0IEgpP8Vj4SNJt6EaYZVfyDGIDFSY7HdAqTKSqB-melKZhhQuqhPPXyMCLNlb70Fk_Jr-ujzzDcuWRqc5-vzjgAowxR3d5sO8FuvruFFkVtZTkx3jcTcC6Vud7uTtNAvNmWtjlH-s-LjAK3KFn9fLsJlhA1Eo9LvMpd3GY_z0M0KQwZNRbMKOBXrkWywO3qsU9mouPZ0XR_LOAr2Eq2BswlWyuGiYB7XMlWkkcVCgnImF47krOVZqsAyiqQnSAWD1HUS4LTMAnVtClvH_gByQQzsW38dw3M6UO006i-J9Y1ejVLmbOTrXfDoeEGqu4xABa1HShMpJnnsEnBJK8SaEKBBNvn6MyB4LEVBkfoMUfktybQDJWgCi=s34-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Anticipation',
+                            value: 'Members: No	Level: 3	Type: Basic	Cooldown: 24	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/piTsXgNn-mNzAJ_XX2LOekPmSzQhqi83xDcl5qMnmUN5GmZbNveZsVusEj413PC6-LUO53vE68r7CG6weqJWh6wnPkkdKFLSWgkCbG6nN5n_P1AShbGdxoXW5L5YEUVxwG2lbQPngTmA5tPHtrU2lzbRMpL2aatN_ped3jrmtha253eQC9ZJoSa8tdrfL89P-BSSAYEOcOce194aMhmbJSRFwqw6CMNK5PqnSJc9WlZGvr-CTzdQC6RzBIEFdhVy26J6p6t0XdPyMnMEljE4MitKkrGkB9NuOK_hBM2Z0htECaX12dptwzlAHCsiNxX5XXl6nznoVFmNm-qd2Bk-GDyiYqU3IyXZFSMIKE_IHmxzPj6Ve1cD9Ms3B6eo6ORITAecRzjpeoNqR5tzG-FRx4T6bkTvZyU8pnms5nPPnseSCbayPgDUv2hGfTfO10kK37wU-BjxLC1R-UkJPzv27xpdnF8ys99ZtAk4fL1lQEyDU_CkSXs33O2huiYV3H2KeHMEcvfjv0h5x2DytZ338DOCx1BP5EzYMNGUmyxZx2rb4KtyEFmaqK-3dwkQz1knuAiyQmLrIcaWPYXYXKAnib6Y3AYyJgB2bOTVDdihrTeEHLdCZ0Ma=w253-h165-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*barricade ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!barricade'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/A6mVHv8xYCUJjg-1uOT8bRTB7PuaUWISTWN1SVmL88UqoA6y9fXceLv0ZwuNK6JmTFdaX0gqrY3_QzbSidNweWstvC5tgWDXBwj645quQOAfeXhkgxCjGGTX9ZSiwnrUae4rrieI01Cx-vLjw-AkcSQvsA-KcTp0jh5Xowl2ChPxmlnz75G9ZuEgJVJj-TqKRTGBLWTCCUPXkEpGuhddqrAn1xxjxNiC35NE1sFmO2llguFrGUz_Le-1BeC-Ti7C7YxEY06HqS2v4TfPKURSlaCBws3s09R3qwR_MjCS7Er7Vx8LK0UjwmuGj33tiIb1z9J0da-tBdrY8AzOJUnNVajOOSbPACHIHjFvZz64C5Um1t3xljML0Yun6hO86gZfs8bQ7GMqNWUbeQV7dsd-Afap9XIOk965NBPnI3qp4ktrI50XGNsL2HAGMzmKSZUJjKUiCVRezElg1Pm5eMJ0_3g8Cd6qY56Pf51UE93hkFRJJ13X18kngv2QQUGBpTmDayTPDlYkcxq-U8vymaUxXusU5B7IU7ll87gnrdRRNAEmpV9bWPqjQX6m-KShsA-pDzYznwW8OqrdSeS_hFoDTgu1ncF6fnYNeCQuhFBp64Fe2arja-yf=w37-h36-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Barricade',
+                            value: 'Members: Yes	Level: 81	Type: Ultimate	Cooldown: 60	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/fXUcI2YCAsLQ6nQlSJRRtQ4LwEzkMvNe3q2oMRzglQG6pWRFOdGQbrnpQlbLpQAO2GGtuRmHpzfFww1pRDEcaHOEBY5A2wOSoVR9p-qCthXJ8ISGFvTZXL-nTDh_LCyQjMsubrVohxMzhVsH11QEeycd_f3HsrHV_Hnzl9w9sCXpbRQ1CMLJz4pLWiRx5atX9d9FR2wHU7JZV9pz98Hl0FCjXuznUgujOghyzJZuaup4kIVzUNxdEuQJIC3UluIR6Qn6sVj83IHHBtfsKS-S4WucYhxOs3mRdFf75LSO3z2WCXGNme-6iBhay9MJ6yYbcxkCDe7ZUXfPks4EwvIg1NBlz8RYBRS72SmSNbHp0LSqkv_YszJNUfWQ8ELRYCg0swIYkYKHxqjdxNbCOspQ_KLl8oYSr7SYHmBc6xnXfwA3Ezl8wyN_HH0_wXSLkHMNKS4gbPl6cLaGGCbknl9q_RBUU6FnO-DhCNpYJbPDFg3OzKzLsZhp0f78SRmfwtYSraZ-V_vQj48xUvZ6spgCM7ek3x-tRWZwg3alU-K3UsWZn1l-QJXRmv9nHFzAMv6AAlUl0CpZTpWOjxbKmmXIJxyJDt1F_WO17W5HTWDIVBzYGquy_-_X=w254-h177-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*bash ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!bash'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/Qt65KegzEP4rR1Tx4LPGQbUMQDJlND-mL-lLp5NevjrQ8fyQaXlSd2mUaT2HIN4S2nzTZp5eQHI2pVVF15suBDi0XbkujYn4qslYyk0j_o1ZasJDujCf_HZxwX0NrPqaXvwA039DDczkOKW3T8SutG1Y0fm7oEijATigSUbwRWIxtAwBpUmGMbYrnz0UZ_D5V73cW_lQ_r_XNgP7KxCPzBBi3pOK0rgVHJlzShwtvuz5ZoXpm8EfMglIb9O4gDxy-dZaBYRdX5UJPRbMOn5NBNXBbudZJjQ_uFb2dvIKVcXniQ83uQ_NW0132ih2Kp0JEXDslMUqR2wsvvac8xLH7Ue-RpawAqtAH06IYhv6RqnBnuIW78xLsl-_bjgcMxwbU1z-9AqDVt0royaB_FR0L7e7bjics5WxyV_vvP6XnLzkN4y5X9hQ-ejy5v7bKgikxyWPLZ3zZbzLwNG2uJG6o40Dd_nuL1gpxKPq7ZQPmTKUXwjLXNdhbR3z6U8HqBZPDJfTWu_CWrD2ffTs-4V6cnhUcUxhVBUAdqsV0OFr6o8XIE1ONHGmd4aoGbGAtweuZHV55Fa-PqCBflAL3fsDzUvb2LyWSekeKEwphW4ytUBOTwpzR1Hf=w35-h37-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Bash',
+                            value: 'Members: No	Level: 8	Type: Basic	Cooldown: 15	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/CWwntXdbMviY_LuE-ENmdOJpb8tbcIMq0oykugxpJXkoROe5a0wV_JOKXnXt5XxmcO3r7AzWCPOQDsmnHFtKBlYGGHiZmOLAIbV8i_0O0-pjYKHxEXKaq_tsSfjXBljCi7fYXWo5Cf6PjwB0Gi1kKnQaa2JWXMK0swFtGw5Slhnz5ErGTgNYTpz19r492T5tv7dkGHp5K5fscCfFFHOhPVTrXJUw0r55CbMhQFVhQ3V97ARf2KxuY3ZMqc1kISK7T4DopyO1aUz1wgHLuiid2GUSxgJI-uGY6QxC0aw06TOkh8nQ8c3NFvrpue_p1w67Jeww1hk31U0O-KXv6KZvGdesia7msD95r7gK-ZTkC-QfsaTORzKLP_Ibm2SNw944EXnjRkC74O6WED9NOZbIuRJXJ_UfMHOOxaZA2YbtmByQgB3tOwbetEQpb-mRUSS6xyYGnrZ2-KqaZ8IRYqN10FhClSol70OE2Ykbf8nC8REFvjdKWCtRqi19TlnRomKcAlljhV3HO9nkb0qFENb59ZI6TCVAnyK5JdCGXsnbRV2Foiax9VDz4aocxu8XO5EPR8ddR9lFhYPDOAT7ZJq6By_vX7i00JPxHbr8oi9kMRKfACGxxm9D=w252-h161-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*debilitate ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!debilitate'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/Pz6N33H0MHjaWLI-K1oO1op02GlLudpYkNwePgCCPkcdkkigfaZ9w6e98YJVppNBp3KVBqFVzvH46_EM-WRNIe3bqfvIsmVjAufVbQzFSZyosnhyIE6g_h9EL50bpVTDljFQCIrcKmI5TAflEFg0y4g4r5WBGZTn4hPXPQEXBt2O002CcGsjjtY3tCjL6hg0fAsZrQwmquy3hcaOMXDUArrVe50dya8qSDBPwz2A8wnXRoeem45cq6eO9xa6Ib0E4UZE3HPz43xzwxw9CtC3r4B0MRFJGsjRgNfn-TnnO8rF6yYZlkRbcqekgXLFATWcqzT8bVPHGNppRH5hqYLKuHHCWoRTxcpumOXbyUamiLlM0fgQ-aOUcyhHKjmyKQPAbw5wlf96mw3QMkxWQq10fhm1uIJQ5thmun0FNq_kMyJVOMazKWqha51E4LzCYvoTIpA7oHeukN68SrHaIe0rCYaSFAOkzl17lHuKy9fS2GmCsaIyqOtm_Hf2xPJjxItTjv17PkL3NiCwJJeET8qn_PNSW6bnHPVuo7sesuzJNAoY2y_5A5sXZkaZTnkuZoJZjW9tzWFsQ1JOTLya-OI6wjSoj91LY3uyADOTANPyLkXgvVY76naT=w35-h34-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Debilitate',
+                            value: 'Members: Yes	Level: 55	Type: Threshold	Cooldown: 30	Equipment: Any'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/ILR1l_X_5qrEhJTK4Z4FtnnhDo-icNFXKJRFCSBEUxMRTtWR42hnrkiW3l5OvtxGgkE7LH3DgZ6Os3EuwBpnsDDF5DfWJ-kkvaAaWN9imqN8cw43GkQfz5jutIdWCIINd3qxkI2k9dX4dUmsnGKWaPFUncfuHNkYlPS7a5uiu4e5sViCy_sxhS62D4AtL3y4zbIUc3zAoxjtWqj5yi-TVhdi168AaSBZwqow9Dfipnf3obwHDXGylD81HMb2yDmJOnUgjWE-zQxaYS0-zDkhqVe0gqBKQJHG3CP_bKT-Gxdm31ucwKuyg9-FMLE_XCl5BpIp2g31_qSxfnJm4U8fduQT_Gc8Zj4ZalRDv3NozoR5gsa14kUakXHIbb-IZ-4WuZaPHq-iSYFKiM3XBKxdQaB-AAYDUUH2JF1FboCOyWf_Ihj6S0IA7BRUtORNsQlYExyO_iuAqPhWOGaY2zRgkFc3MKXAQO1w2a70ioTqXNYwswf9xVBx6X_GfFvVoKQDYLZLbGGOa547-8D1AtbN5b_zseh1eG0wdcWnhF1DEMJAQECHTVBCbzhE_q-811RnRhYfapLLHWOp2e-4a74BGjYy59L9fjIZDtYLTIHUBnkF1NknP_2o=w260-h192-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*devotion ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!devotion'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/R4JQpvhgCQ1KP-GNkYH9gJbABz_Gp6jFgLV4FXJvzqZWwKz1WKQUvdmSSW9yHR0SvoANtpDgf_yx1OaJIYSnr3Dm9wG7ri2SYCESQPRlYIPHLCJ-MsSBqoreZQHO4TpkKUVn6sCGtSASuh_fj1GW02tzVqI5wlbaZ_FP9fiPfm2l327X_150Jm5xnWqQJ5OGhBQq5H8tTrFAR3ZBD3QqVwGA95aC8K5hqrVNsiyEpgVyctipasEKstKzYBwKCQ0lUk9Ei1FkAxx9BMRK1qF4LxBRbEHDcaw9mW3xVWbXgdGI8jA7qJBZYd3agJyFEeudBf1G5FwD0hBzjK3k3_ajyVXjLQGXq9IRuoea-wdmtUGWDhBUtHBmGJiPFn9ZA8jiQMmg4kAMHOdZRuq0mAF9dj9xf_c5QmYZLOlTgGxbXCZ0noe8WBkthMUxc27iVq24GDw1qOjGU3ZvZaqQolZe8CL1J35c6Z6nUJ1tb_ELNVa428Tlw-kkwWz45rHpveGvuCkYgv18iBYvsQmzeb8G8OqWlxlnmgJX97-b8KS97UdSi878lP5Vb9t-qhAk6T_knPusL8--9AernxsUWFRwzdnBohJZK3BDWrRElr43HnaybuEMk8M_=w34-h35-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Devotion',
+                            value: 'Members: No	Level: 1	Type: Threshold	Cooldown: 60	Equipment: None.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/B-y6oeDx8IgbrwTRFd-90Fcg1cfWK9EGCrv2L38Mvy6dV1W6lKeSvGttNHBxGxwq-1CIxE9AuqNKK-U-2jJwqvEFdMsUAAz_t_Mft6lC8-bwuavtlnZPygc30o_dSGI4uK19iiX3NMOjpoFIeUM_AdPWvul9mp57ICLHgu_5iWhIRK9U80RqEFGHrS7FV79oH8Z1Vi9oJjDH8egTKSOKipy6MNcWZZh7GNo7GVTTgaWwfS7i6KtQU9wwe8XuSYa9dZh9AQ1zNs2HRUUM_BdKvf_a0WGj2aUG-QrTEwj-J9CgK-fHWtNipKScO7y2mVZBkPTcSqh6CuoJpM55F7UOlfvLhh0BJ_I8j9D1z3q5z-IFObq8gPOOTsRhiK0O07CONCFYWvZg8gdKjF6N14CoFB-RKDOYGAiT-i-GTU_e5RzWWRg1cjlwdBC8z8-vYCv7dk9d66zT8RZbqhe7PdP77kTPOloPks3eMnlzUebDsylhv5Lj2Q3XFxeGC9UQK7pwwrvcqsq_BUWpkL1gvij9w1Ptnm7R4tdqLqG-MUzHZXepIPD8j0XcGEo5X3N_EJ8e-pSZDoFIZX1IChSXq_2yr8BJos_-wS7_DmZKJN8w-dfYJnmN3cRY=w254-h172-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*freedom ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!freedom'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/M4uhak8xkfZa4TO-6kDgyoT4Hz4zLp4Atd8v1FwxE1jXce7dzVOsVuG2uVlEiwpHbx0B93JQJk6RLVbmCmRkdVRAp6XoHKLLhLIzZUzj9QtaGx5JFyE1MR2TXfaCHf2ExZa3gRrRXxbp9MwQsOI_pb8UsVnFgitO-EWHhNQW56l5Pe2AdaQa42Ia_CujYhp7Xc7Qo2Uj2pi4CePbjlZv1vGfXtXfXjQc_0Q-H84beKEKEdH2W716_8uaBBcew7sUbSmTa5TXKviLr4vLgZDhCJ3V8ztT9tSyVez2wFmV31ww6IuUyu2UtZECVarsAguUIumzTxe7VVkvFbaMuz9r-lhkCN2h_gf3I3cJ3JURgG0pMwtLGMlfUV-Frz5W9xsLepmH39JOcjjIlb_SNdD3FDjp_lpfJCnGQWDlqHBX7wBecJSQGAqGzsNN6FBTqQY8EvKIpepo-wPiBrFsaeLoDeQAEL-a4Mxafq6GmEHq36tllSsAOOm5xP7o2inQ6v_dpSgv5eU_Cadjl4w_zu_i6qSvQGZKIAIGEYsLeKhgFT24-2NRlODxA9wQEqnr3dUNiNRJDU4Q3D9adDKKsfK4y22sAf9ieyrB3ECmYKf6LtJB0UnjMelG=w37-h34-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Freedom',
+                            value: 'Members: No	Level: 34	Type: Basic	Cooldown: 30	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/KMiGtdfZ1MUsy1Ab3Pe5MsMn_wWikdpymPzED6bF1zDTmyuXW4QJDeMMOeK7KyhqOqgsGKwllCHOKjaYnQuV-OQdNtfK_kqMq1zhdGpvFdCzQRlYV-acMybUSXhTGrObsAQF6FYXZmHjB2nAf4jsu2mSWQxnTqG3AC3AxnR842lzm9qSjFlNiA63GApZS9g2Ezw7sfpepOohNZDI6pHVQAtZQkNBh-QKNjQOWfQg7E_S3x5w1l3betK1bUo3c7i1wMbcpKGVLYHk5fNr_zVb8P0C9MdJ0ZTBIH7tZjz_owPuqUfM38FoxPrkZ9To6IfugGqj2xf86zyhLJKf_MLtJhft0hOSCn2vLOuoPxh_A1mKbXpqllE4o0QdTk-sdwCLBHUMoKzimWUqI8UAES5bN8ZLWUVEb9aR5ZVPxPD9F0vOtLySQSHPpSF4y08PfMzD3lGQgn-rzbKlkTYHZK6YeFHcyAEbRvpZOUrTH22Csvy2xnesxZpT0WYD-XNj9HfdyBnXs3WGjQRSk4WNUqMK06Ua2E6m72C4SCEymXak1hxY6vmkZBk7fFGHD-Yb7nYeQDr1eMzrCscZKRQC1a5luhbUn-wiqYy8QG7vDnkPNU5Xl7_vTnUT=w252-h162-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*immortality ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!immortality'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/6nWnO5RwjjXgX38s0FcEpeZBFVslWRr5J4vH5k72Lc9bxafmXaVIGoJEGahpHrYZkC_cDAy8CMVbc9_vlUGszyLII4xzc5ic1rOlHICmbzRkrF57bgbW2jgdSRBAJOFzp2_fkIi1Cx6-9XegjGCykncjNWwed_aPeEwzw8moyye9uGWexzmHzzFZVGACbupZcJZGfWrURJoeW4a7yLR8DbfH7pSAQqBn_PXxKW3GMyyjnvk7TVX3pNZ22HzpJPc1JfhPCOhUeosES_1VC7ARfr5XUBixLSDtpCyAFeAFQInoPZalvjpTPCrET-gyHfJ9MbL00J0gp04VFBG1u-ZCIKH3v0kwXerXWgbcBqfpdjhKiNrQnPvbbvv-NRluSdp-JCmSFHRRorKbkT6RxmQhxFH3Dh5f3bgdw7sbTKe0rxvF4mTCwpZ3_YtRc7-DdV3tRLw96faQ5jmDPBndmT3lsVMxLu7GjnwYCn3Nb8_wfnNJwyMQSRK6qjW-Eqc386asV8Mmo4i3L3S33cfkNhmeFLp__2-SNE34TKiJfR-M7rHsL7j5-A_veV7adKOEAlKrVbrsqOaTwekzQBc8M5O0Y6SrculjIbQTa73DzbsLdUDHuw6kWjg8=w33-h32-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Immortality',
+                            value: 'Members: Yes	Level: 29	Type: Ultimate	Cooldown: 120	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/nkU7gHQaccUpHe-cEZskpa_sloEnLuCLiTRIZ79juN2ZKbms7mx4NBwoA_2aE0bvLoSpKLHrHZJ-26um5GnF8WB2BM6vp9rKzypR4brVsQs8a9NjVsY5L8ApiuylC7CAZHa7aCYnFnyWczwktVmv7vfoo5TLYLuG3X0DNA2FmghSE7BJ9SIHfCBXk-0E4RQGDUaIg7E-pyDZzQd9Inkm_3DW-BakDnzTwB-SEuwQN4sZDJS6YNfsdUKGLT88WA9vQN_NQExemBANbhAnNpR4_FIG5iGgL_s07oRDdp31RIfqM3AEhY-j9TvXl5QHztSlDClZTGHAGVjwbxyAZgmpwvEr9M85I4kyKpuAVsgOvYE21RzSQz6A32v_Ij5oT1Vlg2kiIvaS7-Y38reCq9nX9ueXO0kT3GphsXqvZsqB-69LZThRhc1rJo9rFFLwGY0XAftV5Fn-5wQU9TnJmFv72aeMaobdCfoImwIfO3SbjwHZjT_CnB5PKObn-aup3m4wXdHuNH4IozdCSwPWPyKwGCo77j_KEuKPSH_VQgFY1ELxneNrIkCWUkcMYpOEBTtcNtDnYSjLw_8xDU-q46mT0SEzeOoiVph3lqXvvUmQNcfRvWzxTK8w=w252-h189-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*natural instinct ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!natural instinct'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://vignette2.wikia.nocookie.net/runescape2/images/7/79/Natural_Instinct.png/revision/latest?cb=20130306231655'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Natural Instinct',
+                            value: 'Members: Yes	Level: 85	Type: Ultimate	Cooldown: 120	Equipment: Any.'
+                            }],
+                          }
+                        }
+                      );
+  }
+});
+
+/*preparation ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!preparation'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/x5_OVY8HCKJVNGqAj3F0ATLDhGLKMJ1CXe6Csh1E8qMK93QwhH89ctyYWX5XRQ_DIYlMQrdhK3kNsiLQOU-hoA5Sutxq5KpkzDZc4-XEZprlPsOab8vbzifuYnDCuRPK2k-J3mJx4v3_u1GYEzY73PKQGfLtTgXSTZ1WeszFjS5LHs6zs6oJ37Q1k8niLr8LhQxmKTGpbO62QK6Zgseb9yTRZQ8HdccbZF0kUUEccYrTQozD_R-BNde60ShXbbb-4ZghzI5EU2B48uV-47wjb7buYj1IaEXmql7Eo-LzuNsOM559N295kIkXc69TPSyX5gDQpJG6SRp2LHI_AgJQ7NM2qeaeg668pknjNTtBKjSwMaUl0Z1Ngj-h32KYekIzX7rWEjFNWD_72FqPyGTHKbcpVNYWDE_tdwW7a2FVXgQx2Atub9MyHM2bm8RjNvyHQkAjSZw4ALz7LKkBFyU2k2WcC_Rx-ZeC_4L9RzuXKJSed9exx_8Hd_CM8aF6wCV-S0yQmK7CE9UWkg6WcJbCGAml5VWR1EBtdzn_nftdqgiWfY_9qpfMMRTmESVnvIDSqOhc6gvEn8sgJdinu3sKRQwUZ0vt-_CuBx3h6vCG92tjNb_flAX0=s36-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Preparation',
+                            value: 'Members: Yes	Level: 67	Type: Basic	Cooldown: 20	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/g684HgWTJpKz6i5L7qcVXsaU-28Kx65f0FMqQuBBLYm5EafHxMK4rE2Q2ixkmImNdkSIzhtZOou66dFIzWOlexBQ6CqNusx-93o7ZRQ7g5Fhh8dqixwNS4VO4F85iqbC3REyf18UBOhji9qnmvT817K2WgedQ-f_kvwOMjfgsteQHcyVGIct1L5uw9Stz9DyZymwgtcajhvYHQ_bXTHMrNA2AZt_slx8TesUxs0H0SEuRqK_QgwRIV0ThyiBLqWrcC7ofPHyjMUEUDLQOeQ83maYkLqttbLxYKRQG-kYHfpeIa4DWnqLtdqMA9wK2YQrH8IscBIElGJYNOS3oRfxNX5nYqoCV3l4aPfRYeOq91a1lT6oDX7FB-Jbyt1Gk9-OLKU1ooMflVDinWjFgLGidK-bd2o_jjwjvZBlyr0NpF8te4IKKWPEEGWObmjhHexCMPWP7as0av4L6kzo_XaO17Rkv1QpbdV7tijBR2R16GCA7njAOLfs2u_HL4joxQnp7ZG7IOvNRR1r1jbMLMumLDPfNrvggGtH6iwzUXt2grBW-MdblcNxFX6cdLgvFiYIwAlc7V1uKFg8bd0c7Tw_ryfPjNBELh5FmsfNlBo4UJg4n54HZdVH=w253-h161-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*provoke ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!provoke'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/CJeBuLExMmwT2abs7pBauKD0e53pmx2sL0Ts-igoMmB1g1MN8J5hee-nwLH8UQAbQxft_zvVPLwsFigohSD-ccGgVFNFXKYk0KC4I8hq18pPq9r8nwETz3e97woYQGv230DSyHRHCyeFwxP_SEu7PsLEpKTN8SpYHk4mxtdZxbBnnnQ78lMyuNv36Wj26cB3bBPFp9RZjpSLuu7huOHDAcr_IohD76wu-b3Bqbrbse9tX3ADO85yflTFGA01h_yht2NaxuVjNZHIpotn7D44-gWVJsLabVL4zvBRLdFMIu3ySbbhNKnbwY-TCLll9Z4uiJxdU0S8NRev81ai3tF--lRC2x9JJk2AKUhzMMJLbjwyHue_ALwoXml41t2pQKpx2hNKEs_Ixppvys-A9-u_lIuj-W5SdVzE-qTpBuA7CVcrnMjSks_ykuhfZKhI3unitOn1PpnrbYUnK8TcFdlzMx--YTPgZH2cVnAaRnDKxR2taOHeX-ukvvfslXFGL4vKLXCC3fiNbTmMUYsy3x7lPzMED6dReNZhXDtdqfGiblDE-xQH4GQILX9v2quL8LTH0oYKgV-3qwFHY35NN5IMo62Rb_2lvLnssB7L8tAQDV68KQIXW35W=w34-h36-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Provoke',
+                            value: 'Members: Yes	Level: 24	Type: Basic	Cooldown: 10	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/JhLsAP9om2b64RKPKzxWHreD59YTvZvpwQhfHOB6CZv7vyC2LFILnFAwczVX2dw79zfjyw2Loccw9Y-o5Nugm26Ztqrd34peOlvEJ2Irv387VMA3nKqy4Ka_Aqhg24F3UVOdP8msXhWWDAb147jaSw-nqMekX0Yf4xnDNS3XV-gRTULtomYWOOrbu0OjwTfF6vgS-_mFOl4O_Ogwno2wNHteqi24b9y17Meb1hNsC9TaflXg0_NAvq54ds43ExOkH9nEB4ND_E-flZVZhJx19qWLr0GXbhrYPOlOkO3O0kFbZlCNNLsgr29XHEZObgSWpcurrJrNzzUYRzptcAPABBuUF4KGl_t_e-0f3IwEH03wTEKTtti-LoF_pCJSELXZFR6SRH-8jh8SU1_IJRqQ3aFdfZb_TDRYe8No2QThGPkP4ws58ulcRAqbULC2SMUmqQRirSNnyG00HOg8vlO_bAc5cZI_zjmwKwl_8APT7gCerSz9kuTvh1EVNBCLwe1zzPODABcdUY91ChG8S4k_EPMHdMpiaSJrZfEejk4o86sZ6MU6AzbBCGciTRAwZCMQBr9vjqxRPChVl1zR-SEAoxo2BtOWGftaoWSFPdhivmhBKoaazEBw=w255-h205-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*reflect ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!reflect'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/Rmk6TC_4vlG6UHeXlcONqsQqYpNLbLQ77rsEsNY0ty3F9frH-eU1dOUiWt6siyZ-FXTRmGowzwJek4D3GPBzSk5EPQwPz3iGIL4gEGRRKu-NKUtupMOMvxOUnV5x95GM99pdZgqrrbGtFQHjWI4DKJfbWQD5EOHtDFUq3Ke5CMbPrZciz23qCEhshCOAv4owUA8pQSCAOwZ36utqmguU8ikotlMLB8sq3IXMqoRBz4utBBbO4RH9Abt5I6JHJ10R6MXwjbpzu_fF900TctvMhyPu_ztwQnOB6qCQyYgYIgrX7wnEY-31KtGOCrm1lLFaaCu7omn527RNlXzgwnzQLzFA6S5b1pdHcwBipCbYZXPNpz4T7huLtdDzrdMo5yerHVp7Yaa7F20KAez_A2hL93qeI4HK3p_AFryrCBuuVVn9V_UP4LrFX0LnMDDW5dYYvvR1c9kAxGMnqSBtZb75Ud-A5jre4dUfxx9STHbcmcgZMidH0fBp5-vKL5158gExzC03ElM2rL878dmGh_9C-dFEOCjs7I8Ojtb8WchZVnuq1H738tT3uNlEqisry1Vcs0_2VJxy4Em08aVx26Swn74A2YBomvIgI8ojDbLFhEBkmNd81xuR=w35-h36-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Reflect',
+                            value: 'Members: Yes	Level: 37	Type: Threshold	Cooldown: 30	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/bP3D_YQiwULJdwDqsfzVpdTtRKC42sGDqpzKvd5XH6rjDXRnvzUGjI8dWiZI2JZPGYFEQfZ8DDoulXwWPj2ymVBCSLrxNInRxhOZItra04lnJ7yQ1cRF2vlKgZHqAknisToTdvhGEENPWUL0kOqVk3TTYu94gybeKMZ4kztJLX2KlsKkaLqObsMrLld_q0RdWM8QU5YdVsYN611vqXC6sfMsj-c8Z-TVSK8t0WsJz6ZBf_4HevoD7c1HuW9VVfGMU2SfK2LONT176cPSLvluXcnD2AlXDh9gihncQuSx9g3HDrDMPHwvcUifvOt0L_5k0d0aLTUhdNRrManJ2KfYiZ2i3GjKIEFGbs2_906wSUHTpFbpEGqzKJftl_XlTohiuIblNA6LrBs_7ZsdWnpUyQL3pj8u_nunSMjqx7nNyk728Uf_BO3qPw0Jm92xb91um24T_rZj0agZ9orE5xc42Ugxjx6VKKrAf3DDcSuWdAqvFNmKu-1Y6sR1nwDDUEhtCCMlDdteEIoyHCRezxK_lASyRAvOLIjJXbelRBEiPCI7e7CzX6GmJP_oTtT_vByeEQgene0FMPUaIm9gr-qA1gaQydEjzaxFpVXk0yq_8grHXlSwYsLs=w254-h164-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*rejuvinate ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!rejuvinate'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/9dR7_1AsGAlr8jRDzRbiU9cDAaV8X1HFKNhScVwBLe0xpYu0vdMUN5QIk01XsLFpANh71Y2VneVqM5KbpoQtpjRlSz-kuuII4F0QM1-muQz73UajjKZ01fW1hlwCi1Z8ZLEcy6DA1nGfhKqKIOisL1OAObphDtrKQr10nQcdkdbQGykfNNX7OBX_wrxdQdtxkdJO4ONDG25jwEncfdiCUavA6pwFEDdhfWTfV4ghYnBLzuZSynLBER6HE4xsA0yck4R5Vv_8Z6EYmxTWmwOFLbNn6nWmrYR8_7KR01vGL1YizceaG7Vks9-wpALQS2ickyJs2ROyGKNKLLNE15xofNHCwzuC78QCny7xztKUxWWKQ-iQcqNuzW0J5KaWe3SoDvlL6qIKZLLWteISiaDNB-mWBFF1HT5dYU0rtVU3UR4vbi3g1ipzRU84j4oOPVh4sXQtWTBtqSBeuVkT7dLYhreggGWX2dZJDgUExZtOdXKM77Kz3aEXB2wQOAGoONB7GaYRbUzI37mFdD9B8ruNtnHt0CvIszNX7XWLObinCB8aEZcuEHKARe1_St_H5Xih-BAsNIz8gXB2GV01B2L6X09v8mpz3ii1xRdMWHgjCilsvA_oquFD=s35-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Rejuvinate',
+                            value: 'Members: No	Level: 52	Type: Ultimate	Cooldown: 300 or 15 Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/td5T4KJQcPEcvM6iFt5mliOroh8jxyhFWC0O-ML4oIiVsecL4EERU3Tg_lF4Oo3qdTPfWAU631A1HMo0c5bSOp0qA2h1YPwfQK4FPpugdjAth5DwsHnjIuFvNKFS23g_yt8LDEy79XgrtRwkKgqLtNiPH4ydHcrwdWyEXMq-KIuS2HH6op_21vNuSXN7SQNxATh3rY_1YYCRGLvWJ1M-5GDSYIBpMIf8KZO_NN8L4W1bg0n7apqbv0EYm2a33K2rprhHmA_CsCp9yx18Vk3Jw9Ey4jE37_MdeRlH_wzlRbgN4em-L6RztE0mTaBgFFMTZw1UDhEeazD2L1nEBCWO7WwvP9CMtu6OcV8tvt8TzFLfymPES2DuUEcHN0s8yrew_t5XTHZlj_AUxeyznh-45zSLKp6_btx6Z0JMWiCrdKysAYeeMX8UVSeP25Adq5ADFGpXzpya4uCFxm_fp6VDGmi1DuHdv5W8yEG7WGl33pascv0ECHhM5KVq2Zd6M4B4BrQZbW8OqdrMQC9SC-1ScefA_vceEbjK4xarkgUALNh5-F22yq4NmbAMBaBzjMLnPoXdzaHKI0-eGkc4srsWP7nCanxw0V8RFmOq6w2OKdR08wnTlUGy=w258-h163-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*resonance ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!resonance'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/RYhkfPGMDjFDdppc73tmSABpLBRy9Zln0roW7ErSLAPXR7s35e8bBLGZXPFGmVdmls9XVYzk9kz1RzFYEBos8jHe8Qa4YCQIxeecDe7w2L3Q9porfCMZ_i-UGX6J34IOaOPNqKic0ovwrv0z3RETFQC8YhDgZVN8O5oMmSdKDPf7GgLO-ZDqW7xFbHxA59p7F3LGzoCmQayQPMQBMCnTaHlNjNghDKWV6GYKm4QT3VVGKMyDBnh4XmVLn_amk7ZGLfE7belnsAiGfctD4zsALf7Nsx3MO-6NPi17wnwSP7gnoXU8a7-7Ly7QQZ1E5K9PRreG9s6iRx1rbZx9XXtJhZ_0qn70a-BeJ0ccBdsFi6Dna-ioRaMOoELUm1m_Sr2hkfTF34eZWKO9Mq-6RRrmR9VH0MW1cU6GxP0yGNiSOJUc1kEf2xi6etcVp78QoZNaKM_wsKeI7YhjyumO6NfutzpPfMwAtKLfXtjPc1Xd06bVEumn8qKAhaNSH2PRXXvrUbMpxbsg0b1Ly8iBN5bkhdcEPKedVo52ruOdNKOxurnwHVLdJ028ovofCMWJszViUhsKNmWWYwcoINOEsXShQmsDUMVQ8cfJBsGBHglzv-6CT7V1dQoD=w37-h35-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Resonance',
+                            value: 'Members: Yes	Level: 48	Type: Basic	Cooldown: 30	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/_7a9tkjJPoGyQF5HcjImfBsb58t5v40jpfahp_0w6DMkQgQ2WBphSIlcxVnyjjp4bIz71jRoceLqRsdsJ7U9-JoJWiFEv7abkoCCCcxnRn8lj4I4BQ4kfpzvQz-PjVaPBNC4QHPgIzsuIAFsjdih4sROF9AIgP6tv_40QWPLfLHdLywiRF7FK2prQuMJwqPkVlQdaxVlmKjdpjrWd7rp5R_q2d36UXMbYo4DfHIN1-IMyXlf45MbdOcnhkA7sUBgkxtSHAKKWK4QQcOYqh2L4x2MAGN0mHhD2t6L_AZQEqUgCpHHZxr9kIovh_eQCPaBeobn5ZOn8f67OR1DjatHIPgp0ZDZG0ArJuUlya-TJQ6QnUZ6Lm9o3NYATa-Us6CnmK3c0xeQBBVRBWGFESqDCahbaHr7J0xy-Y3xK_LNrx6OaCRWS5yVVhkjBzPFwCj9RgeLV6xKYHWdO1JdWNQ8ImzJxmbnu8tIyYBrZRnERaLppU5Y0DMOkdeFzt2PoFSx-N5IZGZYk_jlYFP8xfC18uFGcy8KGzkhko-08mu14I0GsL9VhhBCP3dD65aGO0ui6epWNGFyD95iDvQ8IrAykh-gXU5xaEGJIGttfoaQ56jOQ5W0=w253-h203-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*revenge ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!revenge'){
+    message.channel.send({embed: {
+                            color: 8421504,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/E8q1eSzFOXWwf9XM-4k_UWKa4tBemKmywQ-Kd0U_PR5PsmWoGHK7fUN3tU5Yqn30P_YiVkzLbc56OT-EK5vhYaWHe-omNa7OupYxbjBlYSlj-A_IPxVwy3VA_Zr7dmwR2yRm-PXDOXFydrDiZ8CIyB2JJROHs1Ww4zymK5movvtVGzXig8l6g0m1UeB395ck3ajf-U3T6zVF6c5fhoJbMS25ooDp-6tqSYVbIfhQx6P4W5KKFHz4ifzE1J56lp0UOrTdGMsiazA4PXIpETe49CzMPu7EaL05uQFODTReow1lwXZfzlx0B_c9pa6CqUS1tIlllDv7lENyJE8o0OrX8c_ftAkKb2reEXL0AI5nSAFe7yAAQ765UufCRHPlVdjOg1gylnC90yvyfcrCvRYz2HHjPoqDgo0ZNEvljKZ5gUyovaTumfXceu_WCdH5YC1GF5IIRYcBlgcPzFOwDNMRKMvStflf9QNn1I1Yc7GyUZE5WXVTojIk-gWRTFajgGUIvZ4N8SSp7_3g96Jl0ljPFnFnmr84PpyN1rEw_RVx9WJk9i1cWgTzCTccjJu23STk-nhLzaB8k6i20uh59_zE0pJ6XPZV_HmlFMnpjwlNZtEa0lxhF1Le=w35-h37-no'} ,
+                            author: {
+                            name: 'Defence',
+                            icon_url: 'http://cdn.iclanwebsites.com/jrtheblack/Awards/25425.png?1479358236'
+                            },
+                            fields: [
+                            {
+                            name: 'Revenge',
+                            value: 'Members: Yes	Level: 15	Type: Threshold	Cooldown: 45	Equipment: Shield.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/Yu9S0Wvp4ZYfwlExdIzcKS84fZgoeNCeWNyG_P8CEazO-ewrfecHS1w1eIC7YkFTpNoi_Sej0sYRGFrGH6l60P-qY-0P0PBVGFiHDkdeaN31vt0ZtGGPQ7rKKOqkVQOtGkF9lS9fX85313X0G8R7SOoYtlBZvmSU20Jq7cRyLV6xaY1t1y8rfvzR73xMD78mIwqNSNdnw9Jkfwte5UttqhyAI43SRFCCEOfOdrp0a1EtUyJFjyuupXnBC5RSUI9vX9-ftegn81fyfZxJTMjrm9QQkckiD03ZMGoAe9c4kJBvjv1lM0GJIsPdc5JOcPfFQcZZ2QdlB4Z3Z_xOivLbpfAMChBXcJfBtmuyeQyLFz4L6k4R6Yjt2V97njt9564pQy6RMwORhQFEGqKbc1Xxn3JWv1nVb8XkKV0ig8O5aHc7p_PF2G4ZVT6RUtIRAh9i-wztoptYOPHNXyQg9bMpjPRiPchklO3yFo4FkCfBmrPA5Cy7_DQQAI0UtQaGeUsO3HpUIti4OPFs4quC_R-cfEYmLct1a9XmGlJA6cW6INdiGC4tGsIXHQS02IxxXcgnBb4jCzPy-p-4l8dTjKWTOevbGDY5UMF-1aPOboExwU3pyP0095CV=w253-h159-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+// /*natural instinct ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!natural instinct'){
+//     message.channel.sendFile('./images/abilitiesdefence/naturalinstinct.jpg')
+//   }
+// });
+
+/////////////////////////////////////////                     HELP COMMAND                       //////////////////////////////////////////////////////////
 bot.on('message', (message) =>{
   if (message.content == '!help'){
     message.author.send('__**HELP (COMMAND GUIDE)**__\n\n'+
@@ -1041,13 +1999,15 @@ bot.on('message', (message) =>{
                         '**Welcome to B5TA BOT**'+
                         '-~-~-~-~-~-~-~-~-~-~\n\n'+
 
-                        'Enjoy your wonderful gainz and keep challenging yourself!\n\n'+
+                        'Looking for content and content writers! Join us is creatung the best guide bot for runescape on discord. '+
+                        'This is a wonderful oppurtunity to get a little coding experience. If you have content you would like to post on the bot, '+
+                        'but don\'t know anything about coding, pm me on discord jefish#3948\n\n'+
 
                         '-----__**COMANDS**__-----\n'+
                         '(all commands start with !)\n\n\n'+
 
                         '__BOSSES COMMANDS__\n'+
-                        '!boss - List of bosses this bos has\n\n'+
+                        '!boss - List of bosses this bot has\n\n'+
 
                         '---Low-Level Bosses---\n'+
                         'Chaos Elemental: boss-chaos\n'+
@@ -1064,7 +2024,7 @@ bot.on('message', (message) =>{
                         'General Graardor (Bandos): boss-graar\n'+
                         'Commander Zilyana (Saradomin): boss-zil\n'+
                         'K’ril Tsutsaroth (Zamorak): boss-kril\n'+
-                        'Nex (Zaros): boss-nex\n\n'+
+                        //'Nex (Zaros): boss-nex\n\n'+
 
                         // ---Medium-Level Bosses---\n'+
                         // 'Corporeal Beast: boss-corp\n'+
@@ -1099,10 +2059,25 @@ bot.on('message', (message) =>{
                         'super strength\n'+
                         'super defence\n'+
                         'super magic\n'+
-                        'super ranging\n'
+                        'super ranging\n\n'+
 
+                        '__ACTIONBAR COMMANDS__\n\n'+
+                        'actionbar magic dualwield\n'+
+                        'actionbar magic 2h\n'+
+                        'actionbar range dualwield\n'+
+                        'actionbar range 2h\n'+
+                        'actionbar melee dualwield\n'+
+                        'actionbar melee 2h\n\n'+
+
+                        '__ABILITIES COMMANDS__\n\n'+
+                        '!abilities magic\n'+
+                        '!abilities range\n'+
+                        '!abilities attack\n'+
+                        '!abilities strength\n'+
+                        '!abilities defence\n'+
+                        '!abilities constitution'
                         );
   }
 });
 
-bot.login('YOUR_USER_TOKEN_HERE');
+bot.login('MzE3MDQ1MjcyOTM5MzMxNTg0.DAg7iA.ZSRNkg8_OVLNtT7uhHD1UC6g5uY');
