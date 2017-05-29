@@ -358,7 +358,9 @@ bot.on('message', (message) =>{
   if (message.content == '!prayer restore'){
     message.channel.send('__**Prayer Restore Recipe**__\n'+
                         'Rannar & Snape grass.\n'+
-                        'Req Herb Lvl: 38.')
+                        'Req Herb Lvl: 38.\n'+
+                        'Exp Per Action: 87.5.')
+                         
   }
 });
 
@@ -367,7 +369,8 @@ bot.on('message', (message) =>{
   if (message.content == '!anti-fire'){
     message.channel.send('__**Anti-fire Recipe**__\n'+
                           'Lantadyme & Ground blue dragon scale.\n'+
-                          'Req Herb Lvl: 69.')
+                          'Req Herb Lvl: 69.\n'+
+                          'Exp Per Action: 157.5.')
   }
 });
 
@@ -376,7 +379,8 @@ bot.on('message', (message) =>{
   if (message.content == '!super anti-fire'){
     message.channel.send('__**Super Anti-fire Recipe**__\n'+
                           'Anti-fire & Desert pheonix feather.\n'+
-                          'Req Herb Lvl: 85.')
+                          'Req Herb Lvl: 85.\n'+
+                          'Exp Per Action: 210.')
   }
 });
 
@@ -385,7 +389,8 @@ bot.on('message', (message) =>{
   if (message.content == '!super restore'){
     message.channel.send('__**Super Restore Recipe**__\n'+
                           'Snapdragon & Red spider eggs.\n'+
-                          'Req Herb Lvl: 63.')
+                          'Req Herb Lvl: 63.\n'+
+                          'Exp Per Action: 142.5.')
   }
 });
 
@@ -395,7 +400,8 @@ bot.on('message', (message) =>{
     if (message.content == '!super attack'){
       message.channel.send('__**Super Attack Recipe**__\n'+
                             'Irit & Eye of newt.\n'+
-                            'Req Herb Lvl: 45.')
+                            'Req Herb Lvl: 45.\n'+
+                            'Exp Per Action: 100.')
   }
 });
 
@@ -404,7 +410,8 @@ bot.on('message', (message) =>{
   if (message.content == '!super strength'){
     message.channel.send('__**Super Strength Recipe**__\n'+
                           'Kwuarm & Limpwurt root.\n'+
-                          'Req Herb Lvl: 55.')
+                          'Req Herb Lvl: 55.\n'+
+                          'Exp Per Action: 125.')
   }
 });
 
@@ -413,7 +420,8 @@ bot.on('message', (message) =>{
   if (message.content == '!super defence'){
     message.channel.send('__**Super Strength Recipe**__\n'+
                           'Cantadine & White Berries.\n'+
-                          'Req Herb Lvl: 66.')
+                          'Req Herb Lvl: 66.\n'+
+                          'Exp Per Action: 150.')
   }
 });
 
@@ -421,16 +429,18 @@ bot.on('message', (message) =>{
 bot.on('message', (message) =>{
   if (message.content == '!super ranging'){
     message.channel.send('__**Super Ranging Recipe**__\n'+
-                          'Dwarfweed & Wine of zammy.\n'+
-                          'Req Herb Lvl: 72.')
+                          'Dwarfweed & Wine of Zammy.\n'+
+                          'Req Herb Lvl: 72.\n'+
+                          'Exp Per Action: 162.5.')
   }
 });
 /*Super ranging Alias*/
 bot.on('message', (message) =>{
   if (message.content == '!super range'){
     message.channel.send('__**Super Ranging Recipe**__\n'+
-                          'Dwarfweed & Wine of zammy.\n'+
-                          'Req Herb Lvl: 72.')
+                          'Dwarfweed & Wine of Zammy.\n'+
+                          'Req Herb Lvl: 72.\n'+
+                          'Exp Per Action: 162.5.')
   }
 });
 
@@ -439,7 +449,8 @@ bot.on('message', (message) =>{
   if (message.content == '!super magic'){
     message.channel.send('__**Super Magic Recipe**__\n'+
                           'Lantadyme & Patato cactus.\n'+
-                          'Req Herb Lvl: 76.')
+                          'Req Herb Lvl: 76.\n'+
+                          'Exp Per Action: 172.5.')
    
   }
 });
@@ -451,3 +462,49 @@ bot.on('message', (message) =>{
                           'Irit & Unicorn Horn Dust.\n'+
                           'Req Herb Lvl: 48.\n'+
                           'Exp Per Action: 106.3.')
+    
+   }
+ });
+
+/*Magic Essence Potion Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!magic essence'){
+     message.channel.send('__**Magic Essence Potion Recipe**__'\n'+
+                          'Star Flower & Gorak Claw Powder.'\n'+
+                          'Req Herb Lvl: 57.\n'+
+                          'Exp Per Action: 130.')
+    
+   }
+ });
+
+/*Weapon Poison Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!weapon poison'){
+     message.channel.send('__**Weapon Poison Recipe**__\n'+
+                          'Kwuarm & Dragon Scale Dust.\n'+
+                          'Req Herb Lvl: 60.\n'+
+                          'Exp Per Action: 137.5.')
+    
+   }
+ });
+
+/*Sanfew Serum Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!sanfew serum'){
+     message.channel.send('__**Sanfew Serum Recipe**__\n'+
+                          'Super Restore (3)\, Unicorn  Horn Dust\, Snake Weed\, & Nail Beast Nails.\n'+
+                          'Req Herb Lvl: 65.\n'+
+                          'Exp Per Action: 160.')
+    
+   }
+ });
+
+/*Antipoison\+ Recipe*/
+ bot.on('message', (message) =>{
+   if (message.content == '!antipoison\+'){
+     message.channel.send('__**Antipoison\+ Recipe**__\n'+
+                          'Toadflax & Yew Roots.\n'+
+                          'Req Herb Lvl: 68.\n'+
+                          'Exp Per Action: 155.')
+    
+  
