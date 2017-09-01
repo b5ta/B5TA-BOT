@@ -2080,4 +2080,4 @@ bot.on('message', (message) =>{
   }
 });
 
-bot.login('USER_TOKEN_HERE');
+bot.login('MzE3MDQ1MjcyOTM5MzMxNTg0.DIqZWw.TWHkRP19PNambDigq1yH_XYHJKg');
