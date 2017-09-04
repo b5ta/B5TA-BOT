@@ -10,21 +10,21 @@ bot.on('message', (message) =>{
     message.channel.send('Specify which boss with boss-bossname: \n\n'+
 
                           '__**Low-Level Bosses**__\n'+
-                          'Chaos Elemental: boss-chaos\n'+
-                          'Dagannoth Kings: boss-dag\n'+
-                          'Giant Mole: boss-mole\n'+
-                          'Kalphite Queen: boss-kq\n'+
-                          'Exiled Kalphite Queen: boss-ekq\n'+
-                          'King Black Dragon: boss-kbd\n'+
-                          'The Barrows Brothers: boss-barrows\n'+
-                          'TzTok-Jad: boss-jad\n\n'+
+                          '!boss-chaos - Chaos Elemental\n'+
+                          '!boss-dag - Dagannoth Kings\n'+
+                          '!boss-mole - Giant Mole\n'+
+                          '!boss-kq - Kalphite Queen \n'+
+                          '!boss-ekq - Exiled Kalphite Queen\n'+
+                          '!boss-kbd - King Black Dragon\n'+
+                          '!boss-barrows - The Barrows Brothers\n'+
+                          '!boss-jad - TzTok-Jad\n\n'+
 
                           '__**God Wars Dungeon**__\n'+
-                          'Kree’arra (Armadyl): boss-kree\n'+
-                          'General Graardor (Bandos): boss-graar\n'+
-                          'Commander Zilyana (Saradomin): boss-zil\n'+
-                          'K’ril Tsutsaroth (Zamorak): boss-kril\n'+
-                          'Nex (Zaros): boss-nex\n\n'+
+                          '!boss-kree - Kree’arra (Armadyl)\n'+
+                          '!boss-graar - General Graardor (Bandos)\n'+
+                          '!boss-zil - Commander Zilyana (Saradomin)\n'+
+                          '!boss-kril - K’ril Tsutsaroth (Zamorak)\n'+
+                          '!boss-nex - Nex (Zaros)\n\n'+
 
                           // '__**Medium-Level Bosses**__\n'+
                           // 'Corporeal Beast: boss-corp\n'+
@@ -34,10 +34,10 @@ bot.on('message', (message) =>{
                           // 'Kalphite King: boss-kk\n\n'+
 
                           '__**God Wars Dungeon 2**__\n'+
-                          'Gregorovic (Sliske): boss-greg\n'+
-                          'Helwyr (Seren): boss-helwyr\n'+
-                          'Twin Furies (Zamorak): boss-twins\n'+
-                          'Vindicta & Gorvek (Zaros): boss-vinny\n\n'
+                          '!boss-greg - Gregorovic (Sliske): \n'+
+                          '!boss-helwyr - Helwyr (Seren): \n'+
+                          '!boss-twins - Twin Furies (Zamorak): \n'+
+                          '!boss-vinny - Vindicta & Gorvek (Zaros): \n\n'
 
                           // '__**High-Level Bosses**__\n'+
                           // 'Araxxor: boss-rax\n'+
@@ -326,6 +326,8 @@ message.channel.send('__**Kree\'arra**__\n'+
                       'He has moderate range and mage defence and players can kill it according to their recommended style.'+
                       ' Kree is located in the southwest corner of GWD1, to get to Kree you must have level 70 range \(cannot be boosted\)\n\n'+
 
+                      'Remember: You can only attack Kree wit range or magic.\n\n'+
+
                       'For a strategy guide visit <http://runescape.wikia.com/wiki/Kree%27arra/Strategies>\n\n'+
 
                       '__Preferred Combat Style__: Range\n\n'+
@@ -422,6 +424,8 @@ message.channel.send('__**K\'ril Tsutsaroth**__\n'+
                       'K\'ril Tsutsaroth is level 650 with 55,000 life points. He has three different attacks.\n'+
                       'His melee attack does 1200+ damage; his typeless attack does over 5000+ damage and drains prayer, and his magic attack does 1100+ damage.\n'+
                       'Once inside the dungeon, the player must run north and jump across the bridge.\n\n'+
+
+                      'Remember: Antipoisons\n\n'+
 
                       'For a strategy guide visit <http://runescape.wikia.com/wiki/K%27ril_Tsutsaroth/Strategies>\n\n'+
 
@@ -922,11 +926,126 @@ bot.on('message', (message)=>{
   }
 });
 
+bot.on('message', (message)=>{
+  if (message.content == '!boss-aken'){
+    message.channel.send('__**Har-aken**__\n'+
+                          'Har-Aken is the final boss of the Fight Kiln combat minigame, encountered on wave 37 of the minigame. '+
+                          'Entering the Fight Kiln requires having done The Elder Kiln, as well as a one-time payment of a fire cape. '+
+                          'It\'s a tougher and improved sequel to the TzHaar Fight Cave minigame, and is extremely difficult to complete for the average player. '+
+                          'It is highly recommended to watch a tutorial video before attempting this boss.\n\n'+
+
+                          'There are many TokHaar-Ket-Dills which require you to break there armour with a pickaxe. '+
+                          'The Tokkul-Zo ring is also reccomended as it increases the dammage dealt to TzHaar, Fire or Obsidian creatures by 10%.\n\n'+
+
+                          'For a strategy guide visit <http://runescape.wikia.com/wiki/Fight_Kiln>\n\n'+
+
+                          'For a boss guide video watch <https://www.youtube.com/watch?v=g1KWJUv5nG4&t=564s>\n\n'+
+
+                          'For more on this boss enter the command **boss-aken more**\n\n'+
+
+                          '__Preffered Combat Style__: Range\n'+
+                          '(can be done in any combat style)\n\n'+
+
+                          '__**Gear Setup**__:\n'+
+                          'More Effective >   Less Effective \n\n'+
+
+                          '__*Armour*__\n'+
+                          'Obsidian helm > Pernix Cowl > Armadyl Helmet\n'+
+                          'Amulet of souls > Blood Amulet of fury\n'+
+                          'Obsidian platebody > Pernix Body > Armadyl Chestplate\n'+
+                          'Obsidian platelegs > Pernix chaps > Armadyl Chainskirt\n'+
+                          'Obsidian gloves > Pernix Gloves > Armadyl Gloves \n'+
+                          'Obsidian boots > Pernix Boots > Armadyl Boots \n'+
+                          'Max cape > Skill cape\n\n'+
+
+                          '__*2h Weapon*__\n'+
+                          'Nox > Obliteration > Darkbow\n'+
+                          '__*Dual Wield*__\n'+
+                          'Ascensions crossbows >	Shadow glaives > vengful kiteshield(switch)'
+                        );
+  }
+});
+bot.on('message', (message)=>{
+  if (message.content == '!boss-aken more'){
+    message.author.send('__**Har-aken (more)**__\n\n'+
+
+                        '(Note: These values are for optimal survivability rates. It is entirely possible to complete the Fight Kiln without any of these skills.)\n\n'+
+
+                        '92/95 or 70 Prayer (for Soul Split and Turmoil/Torment/Anguish, or for Piety/Rigour/Augury)\n'+
+                        '80+ Attack, Defence, Strength, Constitution, Ranged, and Magic\n'+
+                        '96+ Herblore (for overloads)\n'+
+                        '96 or 67 Summoning (for Pack Yak or War tortoise)\n'+
+                        '85+ Smithing for obsidian armour (can be boosted or assisted)\n\n'+
+
+                        '**INVENTORY**\n\n'+
+
+                        '__For high level players__:\n\n'+
+
+                        '-Equipment for multiple styles\n'+
+                        '   -1 melee weapon (used in tandem with a pickaxe on the tool belt,\n'+
+                        '   of rune quality or higher to break the armour of the many TokHaar-Ket-Dills),\n'+
+                        '   dreadnips, or a steel titan. Dreadnips and steel titans are very effective against the TokHaar-Ket-Dill.\n'+
+                        '-2 Supreme overload potion or 2 Overload flasks (if you do not have overloads, replace them with 2 Super warmaster\'s potions)\n'+
+                        '-2 Prayer renewal flasks\n'+
+                        '   -Alternatively, 2 Super prayer renewal potion\n'+
+                        '   -Alternatively, instead of 2 overload and 2 prayer renewals, 2 Holy overload potions\n'+
+                        '-2 Saradomin brew flasks/2 Super saradomin brew flasks/Summer pies/Rocktails*\n'+
+                        '-4 Super restore flasks\n'+
+                        '-1 Adrenaline potion\n'+
+                        '-1 Weapon poison++\n'+
+                        '-Enhanced excalibur (free passive healing that does not require any adrenaline - it shares its cooldown with Rejuvenate and Guthix\'s blessing)\n'+
+                        '-Ring of vigour\n'+
+                        '-Water Surge runes\n\n'+
+
+                        '__For lower levels/if using lower-end gear__:\n\n'+
+
+                        '-Equipment for all combat styles (on average this takes 8 inventory spaces)\n'+
+                        '   -1 melee weapon (used in tandem with a pickaxe on the tool belt, of rune quality or higher to break the armour of the many TokHaar-Ket-Dills)\n'+
+                        '-2 Super warmaster\'s potions\n'+
+                        '-2 prayer renewal flasks\n'+
+                        '-4 saradomin brew flasks\n'+
+                        '-6 super restore flasks\n'+
+                        '-4 Summer pies or Rocktails (more or less, depending on what gear you\'re carrying)\n'+
+                        '-Water wave runes\n\n');
+
+    message.author.send('**BEAST OF BURDEN INVENTORY**\n\n'+
+
+                        'If using a pack yak:\n\n'+
+
+                        '   -20+ Summer pies or Rocktails (For higher levels little food is actually needed)\n'+
+                        '   -4 Super restore flasks\n'+
+                        '   -1 Unicorn stallion pouch (if beast of burden runs out)\n'+
+                        '   -100 Healing aura scrolls\n\n'+
+
+                        'If using a war tortoise:\n\n'+
+
+                        '    -12 Summer pies or Rocktails\n'+
+                        '    -4 super restores\n'+
+                        '    -2 extra pouches\n'+
+                        '    -If bringing a healing familiar, replace 2 Summer pies with the healing familiar and a decent number of scrolls.\n\n'+
+
+                        'Using combat familiars like steel titan can be brought as well.\n\n');
+
+    message.author.send('**ABILITIES**\n\n'+
+
+                        'The last three abilities will require the use of a shield so remember to bring one.\n\n'+
+
+                        'The Resonance ability should be used as often as possible to help heal the damage. (very risky but if you use res then disable prayers against '+
+                        'Jad it will heal you massive health)\n'+
+                        'The Regenerate ability should be used at the end of every wave so try to keep your adrenaline high at the end of a wave.\n'+
+                        'The Rejuvenate ability restores 40% of life points and all stats to their base levels. This ability may eliminate the need for food.\n'+
+                        '(If using Rejuvenate, do not take off the shield for the full 10 seconds it takes to heal you or else the ability will not give its full effect.)\n\n'
+
+                      );
+
+  }
+});
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  WEEEWOOOO COMMAND
 bot.on('message', (message) =>{
  if (message.content == '!weewoo'){
-   message.channel.send(setTimeout('WEEEEE!!!!!WOOOOOOOO!!!!!!!', Math.floor((Math.random() * 10000) + 1)));
+   message.channel.send('WEEEEE!!!!!WOOOOOOOO!!!!!!!');
  }
 });
 
@@ -1990,6 +2109,384 @@ bot.on('message', (message)=>{
 //   }
 // });
 
+
+///////////////////////////////////////////
+/*  RANGE ABILITIES  */
+bot.on('message', (message)=>{
+  if (message.content == '!abilities range'){
+    message.channel.send('**Please Specify which abitity**:\n\n'+
+
+                          '!binding shot\n'+
+                          '!bombardment\n'+
+                          '!corruption shot\n'+
+                          '!dazing shot\n'+
+                          '!deadshot\n'+
+                          //'!death swiftness\n'+
+                          '!fragmentation shot\n'+
+                          '!incendiary shot\n'+
+                          //'!mutated dazing shot\n'+
+                          '!needle strike\n'+
+                          '!piercing shot\n'+
+                          '!rapid fire\n'+
+                          '!ricochet\n'+
+                          //'!salt the wound\n'+
+                          '!shadow tendrils\n'+
+                          '!snap shot\n'+
+                          '!snipe\n'+
+                          '!tight bindings\n'+
+                          '!unload\n\n'+
+
+                          '!abilities range all')
+                        }});
+
+  bot.on('message', (message)=>{
+  if (message.content == '!abilities range all'){
+    message.channel.send({embed: {
+                        color: 25600,
+                        author: {
+                        name: 'Ranging Abilities',
+                        icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                        },
+                        title: 'This is an overview of all ranging abilities',
+                        description: 'For more information on each ability use the name of the ability as the command.\n'+
+                                      'ex. !binding shot',
+                        fields: [
+                        {
+                        name: 'Binding Shot',
+                        value: 'Members: No	Level: 10	Type: Basic	Cooldown: 15	Equipment: Any.'
+                        },
+                        {
+                        name: 'Bombardment',
+                        value: 'Members: Yes	Level: 55	Type: Threshold	Cooldown: 30	Equipment: Any.'
+                        },
+                        {
+                        name: 'Corruption Shot',
+                        value: 'Members: Yes	Level: 70	Type: Basic	Cooldown: 15	Equipment: Ranged.'
+                        },
+                        {
+                        name: 'Dazing Shot',
+                        value: 'Members: No	Level: 8	Type: Basic	Cooldown: 5	Equipment: 2h Ranged.'
+                        },
+                        {
+                        name: 'Deadshot',
+                        value: 'Members: No	Level: 2	Type: Ultimate	Cooldown: 30	Equipment: Any.'
+                        },
+                        {
+                        name: 'Death\'s Swiftness',
+                        value: 'Members: Yes	Level: 85	Type: Ultimate	Cooldown: 60	Equipment: Any.'
+                        },
+                        {
+                        name: 'Escape',
+                        value: 'Members: Yes	Level: 30	Type: Basic	Cooldown: 20	Equipment: Any.'
+                        },
+                        {
+                        name: 'Fragmentation Shot',
+                        value: 'Members: No	Level: 20	Type: Basic	Cooldown: 15	Equipment: Any.'
+                        },
+                        {
+                        name: 'Incendiary Shot',
+                        value: 'Members: Yes	Level: 66	Type: Ultimate	Cooldown: 60	Equipment: 2h Ranged.'
+                        },
+                        {
+                        name: 'Mutated Dazing Shot',
+                        value: 'Members: Yes	Level: 8	Type: Basic	Cooldown: 5	Equipment: 2h Ranged.'
+                        },
+                        {
+                        name: 'Needle Strike',
+                        value: 'Members: No	Level: 12	Type: Basic	Cooldown: 5	Equipment: Dual Ranged.'
+                        },
+                        {
+                        name: 'Piercing Shot',
+                        value: 'Members: No	Level: 1	Type: Basic	Cooldown: 3 Equipment: Any.'
+                        },
+                        {
+                        name: 'Rapid Fire',
+                        value: 'Members: No	Level: 37	Type: Threshold	Cooldown: 20	Equipment: Any.'
+                        },
+                        {
+                        name: 'Ricochet',
+                        value: 'Members: No	Level: 45	Type: Basic	Cooldown: 10	Equipment: Any.'
+                        },
+                        {
+                        name: 'Salt the Wound',
+                        value: 'Members: Yes	Level: 60	Type: Threshold	Cooldown: 15	Equipment: None.'
+                        },
+                        {
+                        name: 'Shadow Tendrils',
+                        value: 'Members: Yes	Level: 75	Type: Threshold	Cooldown: 45	Equipment: Any.'
+                        },
+                        {
+                        name: 'Snap Shot',
+                        value: 'Members: No	Level: 2	Type: Threshold	Cooldown: 20	Equipment: Any.'
+                        },
+                        {
+                        name: 'Snipe',
+                        value: 'Members: No	Level: 5	Type: Basic	Cooldown: 10	Equipment: Any.'
+                        },
+                        {
+                        name: 'Tight Bindings',
+                        value: 'Members: No	Level: 15	Type: Threshold	Cooldown: 15	Equipment: Any.'
+                        },
+                        {
+                        name: 'Unload',
+                        value: 'Members: Yes	Level: 81	Type: Ultimate	Cooldown: 60	Equipment: Dual Ranged.'
+                        }
+                        ],
+                        timestamp: new Date(),
+                        footer: {
+                        icon_url: bot.user.avatarURL,
+                        text: '© B5TA BOT'
+                        }
+                        }
+                        });
+  }
+});
+
+
+/*Binding Shot ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!binding shot'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/k0najXAbkPQ1AfxfjR2S0qI5CaSAbF1tsewefGwU0105NLShLfj3_DCEtahPg2aosceHWQQXcUNkwM0NxHpObNbGDkEZ5Ddw88Wd9h-r0_2YLzaMJWVC10U5o9ui5PeCN9JEleAPeQOPS3w5jwwiE81bqPD9V9Grez5FqDhRVm7q_Dn5FeElsjkECV44Bulz6L9DerreFsoOBDR7fNqOXjj4ZvvMTxE1WH5Nb0ki2c-a4Vpht79G6xywNWNbcTVNdxO4Lt_F41GmsBEZqnYOPw-TUh4f5oQ73E_IdbxnqC3IiVfFKjWEpZjODKQatzxdzVi0qoX_rZKckRD6VvGVeBLV2ljCBbsh5RzsX8l1oEFZ98T0P-uKqCAD1FA8UhdrvCGNmN44xh0D6MqlQDcZP72fX6X7AnAl8AKAP7hu5f5UQrYtMDEuS0rzlH83veIzDJs-sHrifV4-anPO-YoyHimv-9fzuwj1sshNe8zr_pvQC5oK4r9TqujgZ5-h4G5__NxeTCXyGwFP_NlPzKo0icbnnJMCMYTJzNfAmOe-aaVupX_TlcCCkq7QwieKfPdDSoEPfDzYpo_-abN4fGnTZz_oea_-UjJ1DKdDT-zC6YyxEKv1Z14W=w39-h35-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Binding Shot',
+                            value: 'Members: No	Level: 10	Type: Basic	Cooldown: 15	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/HHq__3rT6At5tAYWtXzMcdAynbABA4CpKGjk3VmV_L1MOsxWkFLIGsCVnY4ijfYnYwJvU6i26hMqwBQH5e8ulhi3Q8YJIhXcrbXR7yKNis8LzYqLNWDcN2qm488MLHdQpottRDcA5MCohER7tavG6feQD9mmRHk9KHSp-SGA9UoITOxgnHLlxjdX0ShzZZ6rcxBTSj3bP35pJu5bcLIyzUfWqi-qX0tHThncI5qt_qhuZVZtCb6GWx24VCOghVDA5bkhCIragu8Pw9SmltlzOiR5qhFDeWEVt_0fSxEd5If5U19hP4i6-zR67Pdlie0_2pJh9goQsOATS0wRr18FRlq-X3JhZvXBIS7cy2TI3p8mQ8l9Zlb2r8pFK5r_hSqaMgs3i8XVP3BZigQKLzDkQH96KycD1kSXyAH8V6dOCT13XTPO6xGbifSCLrLgUYEHLF18pjFMYE2IF1fQL_1TS0-shZS_QyGBthKWCwUEDEBaeKJSYQW_xfTa2Tfdf-ZjdOtqype3kw2vrLk95JcMF552JcY5aLmrx8K_yp8jjSje3elQAfMipUtdDKtkH6SlDXN7iD42EkcDYBap7VvMwDAaWiM_iLNT1f7Lq-bjqZVyjtZJ2ba5=w252-h164-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*Bombardment ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!bombardment'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/EFTZ1d-ri2ICbwEfvLi2dcFa6WsQLNJBB5wt8CZ_zR1J-ca2veI8sgXaJhNRsIl9jwTpz0La1SvCzkAIOdad7kn6nz7-4J5-5--q9x3pusR8stq4qCT1xItzDbs3nD_EJvKfmvPCdmKvQs5tF2-h_Gnn9DQn66KT262FFkjU34Exte9xdbQdXl3PwSYiR8S39BUaBaHX1EOgbtSW60udl_LwNrc0fFwYQqb9IW2z7EyqAgt1Xz-vq0UOoY5VcS08d5vNcDOvJauKOPBWw43jqREEC-zQ2zEccgYib9fBMf-w429cF_3Vpvf7R2O51z4wYx_lhvbR5DTkQ5w_V3uorq1xf5L6tKzuwj2eS4gSU1PPT7b6VU2L_KwF3Ojs4YB5WqVigJE49rTUrvKf5uJbIVw1AgUMUIFFuATIQ0mYqW9i7vh7Nqj0eHA68bkY-DDMZo5ZpaieaDUlq6fK_Vy4HGQ446qa-YqY8E6ibmxhV5QRNWmtreySftrVDzsDytcLygrDGH7Q4Z1mDK6ZvxYH2Ak4gOzK_PwzO90aAqerVWdCm8VMnxOarcNYWrG6kYKkrVVCcO8Wq_5UkPL2xlF-qB6yj1Dw5B_-LfZAj8AHZD2zJawXdz4t=w38-h37-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Bombardment',
+                            value: 'Members: Yes	Level: 55	Type: Threshold	Cooldown: 30	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/dvgGj2ulAGdrG5WKtV5LyzUEXHOTvq4HseoDbH4gpsKyJ9_MVAKpRtBZyklT66p1fXRd1R1uTlR30DgPSXfafHoojFeVK5DSqEKldP8_xmhOetFur-XxTLOqyIuUM1zNoiN8mHMrBFEfNbW9Q2zhuIxQYMEQ6npQjAdjZ65uhErmXzkVXboUa6ac2CSU20ab9wVOpro9Hp7HcFs9jPF0v5LlsTF5DI0wirj1NWJVQOLGNhMiwqxt1eFyDpBYivI4f5h-qOEqiCcVGPY7jzVPlz8TkBcamSoXhkfe1-T4MGav0sVhDdxSyNcOxQCQIIu_VCYeHxV6aoqD7rdUrZqWFIzPASBbXHquLGAkOSoOcQ2wd39N1T7ON8y8ncQZWNE0bqqJA8Hkpih3FsMGJpxjk5cRUAn19CgRpNaOjpHuwA4cHI4pjqR8s5fV9fNbDkDTAeUzN5JbrcLAtSsjfBQrhtlfu2qdwoka4dZvrsrf7yr1sm_cxJsGvJYZqPIdNpNvEF4IUzzcfeR4SZxoK7ZtsIE9oUpuQcZ2yU_gd-pykYOmjZ16VphqhP8Gvof5l07-I_2fDjp3oHdnYJwu-k2OqhpZDWs00rHsvwQnXkxW2LX2xfgg5OVc=w251-h161-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*Corruption Shot ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!corruption shot'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/QhDuxE6wybRAFv05e79xQuf-4ABQuC4UEZxFXmSWKArYgCujxyvuK4bFnLp5uThYQIBwGwWJe7yjZBRah9LfcGjhkFbsZfTAlKPKW-TH3OOobj-JXSaPAhUkDkE4NskCKfq2_efyqhmWy8W8I2aFag4HvXABxQuReyXWd0HkfAlGfy5u_AEfYCD6t6-Qfz6kiBb3hbkjhY8WO2oOTnAQPVXW753WBUuUk4kvBoFabJ4mi-Y7XsKu7wfwckgnr5KbFSU1T-Cnu0XQ2VgXBHlkUZBEUbT5Zl7967dBimcYhssGvOtqKY1ygxpOa0FuZYH08bCwweEX0pJNbj6LSVLi3JIGZVr-kordoyFHl40GPRK7SdkiItywHfzO1pRX3j5hNAFEayNQdrtPoNCeC_KTdimvaZhbCMi2s8VYl1GmhKf1Avp9oWNS13CQ1hHIOOUhNJhr1uwhTWFln8s9lPsbTY5oT7cC1cobncfLdulWeSIMVM7OnnajAn9Xz7E-GuUswKzqPgWZCS21uWN8Y9T76sxbpSf57k5CBBRpGzu58ZG18dUqFqsMNrD6R4gqjGTL5gHvchTiFo6RY_W895TZI2F8hrZuL0H6v-zftNUD-wW0Adjpd2vD=w39-h38-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Corruption Shot',
+                            value: 'Members: Yes	Level: 70	Type: Basic	Cooldown: 15	Equipment: Ranged.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/KvfuCOcOpNlE6Ov5AR-hvLX7nC0pEk1qXWDlG3u3jktZowVF-zRPbZGasiigKpczI_szo4lJ4JCgkbAX4Yj5fvhQw8jRGE4JPhjkt0Ng9pZVqwsNp0z_5mjVkztHjZmX_xqKEw0S1RKtPF_51f58cXokrMMcpgWeOo6D-HY36zoy0EKIIHt8zyByCo2K6BJOUh3wWQ46f9apMkDm1JmD4p9WUXDa5Rp59EvzHo7Hajx28ezyLt-HL5vsso4_PmezkYXcZJzqayuXYGg81z6n-ZIgKtsakmuDYm5ZqZFGIfVElRYAMse5hMr8mvZodgOXCfgGrtjIKInUwc3dr9IRjh_yb5-2NJ7hw9ymdOUpQ8Lqe3Oz6JRFe0E2aMiBVMnOb8VpnoNyDn5Gs_rl2dQiju48PlK-4oC64R6b6eAqUC7fubPMb_L5uH8ckeMLtTnTREm-xkG5GzGek9JnuDCuqMttNycq9IaTud_x6zmvz21DML0W0J7BGU77I5o3qdgcmowQ9MLtBwxGwM85N-xZL3IaJrcDapFEGY_ROJstdQNcd05bh1ypY27e6uE7_-sxFWOPWfUmLaKONTeInbGdxykRZzIXRwDxhaOLVAOXi-b80dLmuiEc=w251-h173-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*Dazing Shot ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!dazing shot'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/Z12i33fUhYIukNj6BbThqPTk1lNaR671RHcsxEN_Iq9rLp5Lrxc9wsjMmtYYd8IRHY_VN7JSPIrbSVmTs35-PwWsjybA6l4mHQRsq9HpEIBaXVC6u_LxirrZrlc42gdpeLDaR1-FUpTE85_HzNyvDLEMgjx5hNAXgZP3oC93Boy8sQ50dh0Oz2xJLfymPp9Hqu__mjuTz7sEN6G65fkHXbkFFVa4F9aFJiWF0i6iaprBgfH_SfW7yaq59E_QEWNjU-ID7Njxrjv2ICiuKwMf9iV5l8ZapwhINIAgNPS3A3MWMbdgR6LEMicDJ5yzA8zhMAgDnA62ecf0C-M2d2G0RlCqhx-R2TSMOg4w-c_0rGLBbwRlPAdwmymRpLTJZTBqInbkNtPyL3fSzmnW6XzGQ6D72f5PB_iLb3GKPJg6lFnYgw6MBOgo5xLD958n4qoBioQT2kWN1mi0xEkMY8aQVnboflp6GxPWMxI0wtheSHyZpIixw5wdUionb8KeqOqsihVmmQCba_uyAbsjiPpdlaeFRQXle8LVJuEA2pJSZxILl4ydPijkYWtxVceYOYp6LZEH3Js9370pgxI_aFdno__Kn0eRiYh_7xbFyENqwhtszn1rV7Av=w36-h35-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Dazing Shot',
+                            value: 'Members: No	Level: 8	Type: Basic	Cooldown: 5	Equipment: 2h Ranged.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/mVfyF935JNGRyeAW6LbIHpVrYIBpWkJHDQe7vRi4VUA4UkqHiApxPbqTThLaA-4y7u80yaEo1kqkCYhJrcY4ZuTR1cgtT9uYoEr6afHwMo0WeqZs4kPTBlCQb5I1Vtqjr8igamwag-nNb-kmJW2qWmRDsEuplWqOr4ARqrWHuM7VDkKeuAqY8PDA81H3iLS54O_SpznRLx93AjtkIHb9JBrqf3yeV4OwqC00pLStn3fLu7XaJ1PRkkcq3zNWNKDFVIiqdPKfNZybpY1XVyH8ykrfA8aM5SIQ6vq2t1_C7PxuKIgWbKPLuIbMDfy6D3Wf3PvNTRz24Wn5QWaO3d4HXlxUa9rtgzwN2O32znPPv8u1Ud3z0Z11vK2o5RIj3LAypJGt7c_Ba6FNikWlL1gVQ_u3_saq6av04DCRw0P3vtCmOz7A3Tl-mK_kttxva0Oh_zeUrhceU1uGkrcmpfkpk8TxstVUel7FFHU8LWAiIEp14OF8uRJIG6lL7biaeny3FcBu0Vn52vff9rars0P1ylZYpZlvWMfR6L_jg5oa3kKfTUf3U_QCdTdB7yu-iOBLf9SBpgFoRLY5mCEWjmB80QhSw6oy87YjGfLfaWJBBepW5P-46F-U=w252-h173-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*Deadshot ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!deadshot'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/_hiD-W0-U3crV8_xDsY9lI_6gvKO4TGYS5Is11Y-fGDbh25sqUQnmfqT34fRGw57KqrSaaMk4nJMTxSsS_M0qNjn2fYasRRby53phe17Bah2wjI9Cm1nsjcP1_62zqNQmOmEOyc13fPf9Sn_9M1zLjhuPuLiCL9FtdanaCEmdJdGEVj6vklzzO3f8k6s2bRUuYu_ZHcwjHZZusiizmabSp_PDTx7MnZjunFcYbJ5LGJ4TuJSqRB7yVe_0U1XTpuUm84myoIFks_Vi7wMEV8_yeFBy09HFxbxKF52u9jlmQ1E0_lZYDpCUgnOMSRUILQTX9hnfHadf_TmYjq_glToTIUmC1gYw1m2xg8_6Bva_5ZcvHTZYZdktl4e-BlRh13GLQsQVkQKVj0onfSoKSsPTJCf6p5ycPz0JuSYiXif8nNCvsVcRJOtQNCb3NL47KpAloS5tvxRdwoIqkW9urF3a24jrYOQJDVO48QiUb2KeWtk8K5KNcT5RJNymZP_qrygQ3snmBrRgmuBb0nhsFxU81gVWHrjgnb3ClIeMhdUj86Ty4a05VtpwUVT6TAvlzNwKziKyy0oct3aAUNjrHTCtEitE59NHBvizATDWv4leqn5FxBTHyHR=w36-h35-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Deadshot',
+                            value: 'Members: No	Level: 2	Type: Ultimate	Cooldown: 30	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/kKB4eBv7XEZ18YMIhbMxH54HquySfLz9mb8i-201sW7ajf2V4mBKM4pdNkOkYb4QXnQAr4d7E4bzelsDqkrPsljizaBlcEJZgHThfVuExRSY8ziPMJAC0yUezMHM2ybhozE_X1U7bdM2R1Ah6gLzR8OsY7Gk2c7vs6L-yMw2te5cyjrqwtk-jYZPSkzpTr8DfjqL1FOSRYruKec7xIGpsQ_GrZdt5DLppe-Tuh_aIqeYi3WJ17iYU-8Szx6l2QFgNbXw7uQIk7hKWFh9VTuWK8fLi_UrnHagrmS1wYJh0F7ObO-dmn_vUosUKk6XhicJL0q0W_LKkhB__QVPNaX31EHxA_p5st9MHaTJzNlq_JQ5xUryLXB4MS2V2DJtkwKSfOHz6vufYupGRkx8m-VNNlvwglYervoT9Q7daIOjlGj5Ed_p08Kn9qeHCQDeKuSUxk5oZVDmxqadMX_SbYuHLAvmVbnJvDZAtIA-YWMFFPhNDnlYOZYgKGbu2yc91nF9ZuzRMqq8gv-52-X2D_ffpD77lK_lx9zrjxRN6w9FIVZ1vMx45VYl-hpwwqNqlkYV3oIQ9TatCuJQisb7wGHGKm_kF7HondVU-94l2Otros125F5199ZU=w254-h163-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+// /*Death\'s Swiftness ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!death swiftness'){
+//     message.channel.send({embed: {
+//                             color: 25600,
+//                             thumbnail:{ url:'ABILITY_ICON_LINK'} ,
+//                             author: {
+//                             name: 'Ranging',
+//                             icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+//                             },
+//                             fields: [
+//                             {
+//                             name: 'Death\'s Swiftness',
+//                             value: 'Members: Yes	Level: 85	Type: Ultimate	Cooldown: 60	Equipment: Any.'
+//                             }],
+//                             image:{ url:'ABILITY_DETAILS_LINK'}
+//                           }
+//                         }
+//                       );
+//   }
+// });
+
+/*Escape ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!escape'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/o5yB8PgPS1W47blMnAw-oWpbse-1morZdMxYXWkl4IdKvsj8VGdnJoDw900OWvPZTnI_Wph3zByceT1bQKit6fiYUkYsRVhQCQ5jpA44MJR2UCuvp3WR1X_J04wITt56xWX_y-Zygn31Id8TvJqpRY4pjuJBQ4LQsENquy4v4V-TYqqIXi7WgEmgnwP8hNYzKit2M9dziHCOBC4GxRE4QxeEXGF0SmyYipbUuXf2Hz7IiduS2bVQ_lVXDcpg6jUrAWV5BN01uUOK83brrJJc4eEPTE1ucifdI46InSRSLIPiyjsV5uPjSnlLWAcN7LjD-U2zHrmz9plU29rWiNwkSvD4IrL6bx5BQvDT1UsM4H1lBfn-qQaWPE4AG1mYVeVU97pn4VWua5fkOQ8luJtkQd_B9tLxxuPODfDCbZcQGEuDslpRzmDht9D9Q8cum89OodgbR1-DCM565V-LrX-_QRSt5dNxlIN1sXm0IycnJHgJN2yZqGV1KrxKcSV0mz-qlxMx9wWreNWEWEDnqT0GekT6orPSCsdm03RObDaK3G4I6AnQYXTMlZ8K2Knj07X0IFr43WhAV-zHVl6UehNz8vDbcGHTYbJbkpeze0nZFSzAyZZR3yFG=w34-h35-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Escape',
+                            value: 'Members: Yes	Level: 30	Type: Basic	Cooldown: 20	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/92l4beqTJ_hrLPniPc6ukirCoWuFPK9chBghVPvOyHu7JJaXcsP7HIq_qcVQ8EvdHynKk5xPkp2RN-i5MkNw8zWtHbqeyNrlyizp00c4caayjzMeKmt_hQa31MSG4_HGxD1QKNj4ERFyVEmSMEhM2_21zfglFYhXBnU-dd968hu_p4yYyNQtO3iBbxfaH8CnWOmYuafaHDOUnaYE9wGBJlb0e-BKDlPrne0LVLxzbNWyWFkquRPnH29z48RTVV7GSTqCz20PrnfliUWPpevYQHnv27kH-nEi3jalgt3kV5lGdqb_IWaYsTGjV24iegHBIFDGNGAZNVCHArzyD2w1aJzKB75NU5yetcQ3bYyCfW6_XVbuWABeMdNtQvnkXyrLUSQ9iwHjAPV9VJLY7ywFYiMWmij23aqttdB9tWqp5d0PjVqN4JZw9JfSCnExN8RjRNKpZTt6mPovp0hHfCCc53vBOd2NGnPd86gUuZ0O3NjEN2njkt-ztmhzDN6SAkMkssT0TQNAfomNy3I4NM35JpFAKtOrIh6wFxWJN5FiDdmXjkkX6Rgc0hGDASylxq56UUnCy_Ia3oXgWcmF5h-1hORVDFEdvG7Rk2c8BbzxCEp_rbOf3qqM=w253-h162-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*Fragmentation Shot ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!fragmentation shot'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/mhexhJxtS-ofv--XmdjVHqrmPqKDbtyCC1pE-XHbUqNCP5KSgA-eg0-1F27c0q_mzVnNtFuc4IBgDdHBrkkEi_Gav5Nl2Q39AGoM3PsuY9C8EJ4kol94SFboHTqpGkoumU1cSkoevwGqTWjRWSyAcpCn88B2Djcpko6QhYX2MYT_iw8VfcjcdyC7bzKFl9wjmBroiA94Xh0EzMwndAka6PShZgBMW17dyjBd9ZX1YdJSevOM8GIFyayU3meOQ0V86a6rsupJYtF2UwYXQ2s5n3qaIdTZlbz11DgdLuiQsIncZ8yLJ4ZJXeccBEi76BObJ3XLPikfSSP6Szbfsmbod49-b1ewhjy6H6WOJYqUIfvohKOPW8NGlHlnFe63nN7aSwqNl35-kyFRl3Ehd1hvSmysPQsZ593WQSRdCPxaBQf5ykSiKJGdXOQXysSGau6paDuH5Otre5UBAOhlp0Yl4-wmH8gwhdAaNiEzCUKuhgImROVg4DG1YoBV2p7j0jeqbe1YdP9la-mpqXrkbJiz9S9lHeTlu3pbS0MFHo9-7AlkeQUF74PeAw_r85iTZ8FxWUMqAjBs_O2msOd4VEqQjEC7t7xhU4bsZ2L5Gj6-SVaRVOXd0Hsf=w38-h35-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Fragmentation Shot',
+                            value: 'Members: No	Level: 20	Type: Basic	Cooldown: 15	Equipment: Any.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/100nQI40ModqIxt5nGLmxZftXOFvEJ_5UdCksxC_5YIUO4WsnucmMNTQ3PiVisyqEkYiw5rmOe3w5RtrSEGFmHpwwGDVuMyAujbYk-Nzg21qcK70caGWbCxxQOPY2qAi8153lyAPm5QD8BRJKbx-L3JqN6CKZdiZwZkjvd9QYWviYnSOA0e7nSviLpShGqXwLjRTXJRHfpMLfZWEdwOdJfgKvRCMmNDQ4ZTCUStSymHGNLF8NwPuFgNw_sWHH7yeN7hEs9mgY9VMrFBgH4pYVuvNAQawJhM1YqjTwZtS-gE9fYTp-nYd3FPwskwKhNz65DPHNgDDBY-d0oCdYlzAGe5PibDPK4qw5y9umgVGElXn7CziJMqHx6L5xk5DbDcJIFUvLa6139-RzWoOjyg5SsIAXf7wyeu0FPY74Kep_b7EFD-Ng-eqnzronvgYexxlPiQGXc5gWSsjIHPADfSJTnKkb2KQHGTb1Pkw2oWfGVotgqEvuCA5PJ_KGlQmrTd-_tU0uyaRZ9mTe4G97yqa5brL5hCo3lNTwPB1jlwWU_RyNWxS-dx-zmtgpQbUnrtpQ7xeLhZjqpKAZtBOmORFnNMTbSsaJhNzVj-omgCBsQ9kb52-kL_V=w252-h176-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+/*Incendiary Shot ability*/
+bot.on('message', (message)=>{
+  if (message.content == '!incendiary shot'){
+    message.channel.send({embed: {
+                            color: 25600,
+                            thumbnail:{ url:'https://lh3.googleusercontent.com/7NOt-QHuGsqWU65C6wQ6LdC1V7fazTuHgV6n7TuakK6tcV5vZbRGxo7_gP8578W6k59a56fDgIgG9K41FXbUq6OIK4ayOT4Cwd2Ljp1jFr0p7_HEznXPNM0ATDliAVivneeXYzCdNiJ9vn27KRkVqxpy8s3EuhzpmMr7a9euNkuukffI1DFY2vTUGj4IobCpeD4Qs5R-KfwO4_IY5q2cTD0TpSQybfMJohZJUpjwUJgfYJfdqA4Ysem1kYoGcYrCYEmSU732_nHZFpWGf8w7t15cPFrGiKyIEofJDWz1sW2hkKgz9zvvfg8nzg9rIz6BTOK4nFQYBmFLMKq1rQEVk5jdHV0LFGsy_YndJUMSsRLPNE2t7pzxQEtUPzCHqhV9wy7uA8qmldqtStTpBBN-q43YGPyVmLyulw4_Yz0Qw1T8GGi5TBiGYD4wKzPsUEa28sHnkYSH4uWrSnluPYlZCt-_RzynQvV2EYDKxNe6qoeN8kRfrEWq_hubq_lTNwiCCuMvwC2G2g2UF2Bv20g-Unw9FZ3JkzPZoknngBK1DnV1n3R2ANaufLljTZR-cn0giiw0lx2O8E3GS3XiSd-C4hLqgX2x9XutA5Vk7NOqkfF5kOFQHXfr=w39-h36-no'} ,
+                            author: {
+                            name: 'Ranging',
+                            icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+                            },
+                            fields: [
+                            {
+                            name: 'Incendiary Shot',
+                            value: 'Members: Yes	Level: 66	Type: Ultimate	Cooldown: 60	Equipment: 2h Ranged.'
+                            }],
+                            image:{ url:'https://lh3.googleusercontent.com/GoIO0V1WzK2d0r7rXzUIKb0TO2rKEiPVDCwxAFlPoXvDYi-e3n8IKleIpCCCuasKUpTCxmUv4sjxuo055c9krirYFzc4NHADik5aUw-61VeN_9d07i6rV-IgX-nAmGgPefR7_jFP6vWS4viCADY_qI59AIui5U9MkY9IOX9a4DJwGJ1wO9OgGeaYI75tHw9HPDYJ2pqN_8jMbcgUzPa9hrdfm-S133_LPEuccx6GW-2ZJ8ariCkhTG5mlS2H7fQ19M-91pg0ZTxVc35XqTcQqRblLSreiXu94y8iENPgTchuRPENHdajSQRgrCdUwRBgbKZ8LcHJihfuOlzjQoAG6Ktx-sx3bebN6VfckNgfit0q4f17qo1OT-UJ8IY2X8zX4iHH2WJgV53RHDKQY4G9tKBC8CcqUTM1ftriP5N6cttoGKJ7ajFN3wNIeLcZyhWz65Vzj2rZtSAPQ17sGZarkJL0Ep9AN4ODrtVb7MznBkIWvrONRo4BohVYydl5woI7D4rfzIIbcQcTQDutrszfrXxumY2Y6cWCJoGgiwmKZ7K-BON5KmeEaKYO_ZunAeRh1k182WXKxG1rrc8D1A3LblLv-_09i2NBdrYZhDlPPzvNlm32XGV1=w251-h188-no'}
+                          }
+                        }
+                      );
+  }
+});
+
+// /*Mutated Dazing Shot ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!mutated dazing shot'){
+//     message.channel.send({embed: {
+//                             color: 25600,
+//                             thumbnail:{ url:'ABILITY_ICON_LINK'} ,
+//                             author: {
+//                             name: 'Ranging',
+//                             icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+//                             },
+//                             fields: [
+//                             {
+//                             name: 'Mutated Dazing Shot',
+//                             value: 'Members: Yes	Level: 8	Type: Basic	Cooldown: 5	Equipment: 2h Ranged.'
+//                             }],
+//                             image:{ url:'ABILITY_DETAILS_LINK'}
+//                           }
+//                         }
+//                       );
+//   }
+// });
+
+
+// /*ABILITY_NAME Shot ability*/
+// bot.on('message', (message)=>{
+//   if (message.content == '!ABILITY_NAME'){
+//     message.channel.send({embed: {
+//                             color: 25600,
+//                             thumbnail:{ url:'ABILITY_ICON_LINK'} ,
+//                             author: {
+//                             name: 'Ranging',
+//                             icon_url: 'http://vignette2.wikia.nocookie.net/soulsplit3/images/e/ea/Ranged_big-13011024.png/revision/latest?cb=20151102014325'
+//                             },
+//                             fields: [
+//                             {
+//                             name: 'ABILITY_NAME',
+//                             value: 'Members: Yes	Level: 91	Type: Ultimate	Cooldown: 300	Equipment: None.'
+//                             }],
+//                             image:{ url:'ABILITY_DETAILS_LINK'}
+//                           }
+//                         }
+//                       );
+//   }
+// });
+
+
 /////////////////////////////////////////                     HELP COMMAND                       //////////////////////////////////////////////////////////
 bot.on('message', (message) =>{
   if (message.content == '!help'){
@@ -1999,7 +2496,7 @@ bot.on('message', (message) =>{
                         '**Welcome to B5TA BOT**'+
                         '-~-~-~-~-~-~-~-~-~-~\n\n'+
 
-                        'Looking for content and content writers! Join us is creatung the best guide bot for runescape on discord. '+
+                        'Looking for content and content writers! Join us is creating the best guide bot for runescape on discord. '+
                         'This is a wonderful oppurtunity to get a little coding experience. If you have content you would like to post on the bot, '+
                         'but don\'t know anything about coding, pm me on discord jefish#3948\n\n'+
 
@@ -2009,65 +2506,65 @@ bot.on('message', (message) =>{
                         '__BOSSES COMMANDS__\n'+
                         '!boss - List of bosses this bot has\n\n'+
 
-                        '---Low-Level Bosses---\n'+
-                        'Chaos Elemental: boss-chaos\n'+
-                        'Dagannoth Kings: boss-dag\n'+
-                        'Giant Mole: boss-mole\n'+
-                        'Kalphite Queen: boss-kq\n'+
-                        'Exiled Kalphite Queen: boss-ekq\n'+
-                        'King Black Dragon: boss-kbd\n'+
-                        'The Barrows Brothers: boss-barrows\n'+
-                        'TzTok-Jad: boss-jad\n\n'+
+                        '__**Low-Level Bosses**__\n'+
+                        '!boss-chaos - Chaos Elemental\n'+
+                        '!boss-dag - Dagannoth Kings\n'+
+                        '!boss-mole - Giant Mole\n'+
+                        '!boss-kq - Kalphite Queen \n'+
+                        '!boss-ekq - Exiled Kalphite Queen\n'+
+                        '!boss-kbd - King Black Dragon\n'+
+                        '!boss-barrows - The Barrows Brothers\n'+
+                        '!boss-jad - TzTok-Jad\n\n'+
 
-                        '---God Wars Dungeon---\n'+
-                        'Kree’arra (Armadyl): boss-kree\n'+
-                        'General Graardor (Bandos): boss-graar\n'+
-                        'Commander Zilyana (Saradomin): boss-zil\n'+
-                        'K’ril Tsutsaroth (Zamorak): boss-kril\n'+
-                        //'Nex (Zaros): boss-nex\n\n'+
+                        '__**God Wars Dungeon**__\n'+
+                        '!boss-kree - Kree’arra (Armadyl)\n'+
+                        '!boss-graar - General Graardor (Bandos)\n'+
+                        '!boss-zil - Commander Zilyana (Saradomin)\n'+
+                        '!boss-kril - K’ril Tsutsaroth (Zamorak)\n'+
+                        '!boss-nex - Nex (Zaros)\n\n'+
 
-                        // ---Medium-Level Bosses---\n'+
+                        // '__**Medium-Level Bosses**__\n'+
                         // 'Corporeal Beast: boss-corp\n'+
                         // 'Har-aken: boss-aken\n'+
                         // 'Legiones: boss-legiones\n'+
                         // 'Queen Black Dragon: boss-qbd\n'+
                         // 'Kalphite King: boss-kk\n\n'+
 
-                        '---God Wars Dungeon 2---\n'+
-                        'Gregorovic (Sliske): boss-greg\n'+
-                        'Helwyr (Seren): boss-helwyr\n'+
-                        'Twin Furies (Zamorak): boss-twins\n'+
-                        'Vindicta & Gorvek (Zaros): boss-vinny\n\n'+
+                        '__**God Wars Dungeon 2**__\n'+
+                        '!boss-greg - Gregorovic (Sliske): \n'+
+                        '!boss-helwyr - Helwyr (Seren): \n'+
+                        '!boss-twins - Twin Furies (Zamorak): \n'+
+                        '!boss-vinny - Vindicta & Gorvek (Zaros): \n\n'+
 
-                        // '---High-Level Bosses---\n'+
+                        // '__**High-Level Bosses**__\n'+
                         // 'Araxxor: boss-rax\n'+
                         // 'Barrows, Rise of the Six: boss-rots\n'+
                         // 'Telos: boss-telos\n'+
                         // 'Vorago: boss-vorago\n\n'+
                         //
-                        // '---Raids---\n'+
+                        // '__**Raids**__\n'+
                         // 'Beastmaster: boss-bm\n'+
-                        // 'Yakamaru: boss-yaka\n'
+                        // 'Yakamaru: boss-yaka\n'+
 
                         '__POTIONS COMMANDS__\n\n'+
-                        'ovl, ovls, overload\n'+
-                        'prayer restore\n'+
-                        'anti-fire\n'+
-                        'super anti-fire\n'+
-                        'super restore\n'+
-                        'super attack\n'+
-                        'super strength\n'+
-                        'super defence\n'+
-                        'super magic\n'+
-                        'super ranging\n\n'+
+                        '!ovl, !ovls, !overload\n'+
+                        '!prayer restore\n'+
+                        '!anti-fire\n'+
+                        '!super anti-fire\n'+
+                        '!super restore\n'+
+                        '!super attack\n'+
+                        '!super strength\n'+
+                        '!super defence\n'+
+                        '!super magic\n'+
+                        '!super ranging\n\n'+
 
                         '__ACTIONBAR COMMANDS__\n\n'+
-                        'actionbar magic dualwield\n'+
-                        'actionbar magic 2h\n'+
-                        'actionbar range dualwield\n'+
-                        'actionbar range 2h\n'+
-                        'actionbar melee dualwield\n'+
-                        'actionbar melee 2h\n\n'+
+                        '!actionbar magic dualwield\n'+
+                        '!actionbar magic 2h\n'+
+                        '!actionbar range dualwield\n'+
+                        '!actionbar range 2h\n'+
+                        '!actionbar melee dualwield\n'+
+                        '!actionbar melee 2h\n\n'+
 
                         '__ABILITIES COMMANDS__\n\n'+
                         '!abilities magic\n'+
@@ -2080,4 +2577,4 @@ bot.on('message', (message) =>{
   }
 });
 
-bot.login('MzE3MDQ1MjcyOTM5MzMxNTg0.DIu_aA.WT3eXSPLICZI0L33N-ytMLCuuvk');
+bot.login('MzE3MDQ1MjcyOTM5MzMxNTg0.DIsvyA.DXqcn75gPcNZ1SIpp5pLyuN7ssY');
