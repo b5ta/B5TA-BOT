@@ -2577,4 +2577,5 @@ bot.on('message', (message) =>{
   }
 });
 
-bot.login('MzE3MDQ1MjcyOTM5MzMxNTg0.DIsvyA.DXqcn75gPcNZ1SIpp5pLyuN7ssY');
+//USER TOKEN
+bot.login('USER_TOKEN');
