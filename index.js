@@ -1057,14 +1057,106 @@ bot.on('message', (message) =>{
     message.channel.send('Link to Strategy Guide: <http://runescape.wikia.com/wiki/Treasure_Trails#Types_of_clues>');
   }
 });
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////                         INVTENTION
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*Invention index command*/
+bot.on('message', (message) =>{
+  if (message.content == '!invention'){
+    message.channel.send('__Specifiy__\n\n'+
+
+                          '!perks\n'+
+                          '!augmentors\n'+
+                          '!siphons\n'+
+                          '!invention guide'
+                          );
+  }
+});
+bot.on('message', (message) =>{
+  if (message.content == '!inv'){
+    message.channel.send('__Specifiy__\n\n'+
+
+                          '!perks\n'+
+                          '!augmentors\n'+
+                          '!siphons\n'+
+                          '!invention guide'
+                          );
+  }
+});
+
+/////////////////////////////////////////////////////
+///     perks
+bot.on('message', (message) =>{
+  if (message.content == '!perks'){
+    message.channel.send('__Specifiy__\n\n'+
+
+                          '!weapon perks\n'+
+                          '!armour perks\n'+
+                          '!tool perks\n'+
+                          '!all perks')
+                          );
+  }
+});
+
+bot.on('message', (message) =>{
+  if (message.content == '!perks all'){
+    message.channel.send(''
+                          );
+  }
+});
+
+
+/*Augmentor tutorial*/
+bot.on('message', (message) =>{
+  if (message.content == '!augmentor'){
+    message.channel.send('__**Augmentor**__\n'+
+                          'An augmentor is a device used in the Invention skill to create augmented items. '+
+                          'Weapons can be augmented at level 2, body armour and shields at level 16, tools at level 22, and leg armour at level 45.\n\n'+
+
+                          '__**MATERIALS TO DISSASEMBLE**__\n'+
+                          '-Pouches (check ge for best price/comp ratio)\n'+
+                          '-Slayer rings\n'+
+                          '-Battlestaves\n'+
+                          '-Unstrung maple bows (or better)\n'+
+                          '-2h swords (mithril or better)\n\n'+
+
+                          '__**Slayer rings**__\n'+
+                          'Slayer rings can be crafted with the purchase of the ability to do so from a slayer master. Once this ability is purchased, '+
+                          'use an enchanted gem with a gold bar at a furnace to craft a slayer ring. Gold bars, magic shortbows, and maple logs are purchasable from G/E. '+
+                          'You can purchase 600 enchanted gems every 24 hours from 2 slayer masters (300 from the slayer master in Taverly, 300 from any other slayer master). '
+
+    );
+  }
+});
+
+bot.on('message', (message) =>{
+  if (message.content == '!augmentors'){
+    message.channel.send('__**Augmentor**__\n'+
+                          'An augmentor is a device used in the Invention skill to create augmented items. '+
+                          'Weapons can be augmented at level 2, body armour and shields at level 16, tools at level 22, and leg armour at level 45.\n\n'+
+
+                          '__**MATERIALS TO DISSASEMBLE**__\n'+
+                          '-Pouches (check ge for best price/comp ratio)\n'+
+                          '-Slayer rings\n'+
+                          '-Battlestaves\n'+
+                          '-Unstrung maple bows (or better)\n'+
+                          '-2h swords (mithril or better)\n\n'+
+
+                          '__**Slayer rings**__\n'+
+                          'Slayer rings can be crafted with the purchase of the ability to do so from a slayer master. Once this ability is purchased, '+
+                          'use an enchanted gem with a gold bar at a furnace to craft a slayer ring. Gold bars, magic shortbows, and maple logs are purchasable from G/E. '+
+                          'You can purchase 600 enchanted gems every 24 hours from 2 slayer masters (300 from the slayer master in Taverly, 300 from any other slayer master). '
+
+    );
+  }
+});
+
 /*Siphons tutorial*/
 bot.on('message', (message) =>{
   if (message.content == '!siphons'){
     message.channel.send('__**Siphons**__\n'+
-                          'The equipment siphon is a device that can be created using Invention.'+
-                          ' Players need level 27 Invention and 200 inspiration to discover the equipment siphon and must discover the Equipment dissolver first.\n\n'+
+                          'The equipment siphon is a device that can be created using Invention. '+
+                          'Players need level 27 Invention and 200 inspiration to discover the equipment siphon and must discover the Equipment dissolver first.\n\n'+
 
                           '__**MATERIALS TO DISSASEMBLE**__\n'+
                           '-Maple logs\n'+
@@ -1098,6 +1190,9 @@ bot.on('message', (message) =>{
                           );
   }
 });
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //          Herblore Recipes
 //***********************************************************************************************************
@@ -2572,10 +2667,18 @@ bot.on('message', (message) =>{
                         '!abilities attack\n'+
                         '!abilities strength\n'+
                         '!abilities defence\n'+
-                        '!abilities constitution'
+                        '!abilities constitution\n\n'+
+
+                        '__INVENTION__\n'+
+                        '!siphons\n'+
+                        '!augmentors\n\n'+
+
+
+                        '__MISCELLANEOUS__\n'+
+                        '!cluescroll\n'+
+                        '!weewoo'
                         );
   }
 });
 
-//USER TOKEN
-bot.login('USER_TOKEN');
+bot.login('MzE3ODM3MzIzMTc1NzIzMDEw.DI9K7A.GhPZH0p2gW6eJSD_azZQuiBi7Tg');
