@@ -2581,6 +2581,39 @@ bot.on('message', (message)=>{
 //   }
 // });
 
+/*Clue Scroll messages*/
+bot.on('message', (message) =>{
+  if (message.content == '~cluescroll'){
+    message.channel.send('Please specify what you are looking for \ncluescroll-strategy \ncluescroll-easy \ncluescroll-medium \ncluescroll-hard \ncluescroll-elite');
+  }
+});
+
+bot.on('message', (message) =>{
+  if (message.content == '~cluescroll-strategy'){
+    message.channel.sendMessage('Link to Strategy Guide: http://runescape.wikia.com/wiki/Treasure_Trails#Types_of_clues');
+  }
+});
+bot.on('message', (message) =>{
+  if (message.content == '~cluescroll-easy' ){
+    message.channel.sendMessage('Easy Clue Scroll: http://runescape.wikia.com/wiki/Clue_scroll_(easy)');
+  }
+});
+bot.on('message', (message) =>{
+  if (message.content == '~cluescroll-medium'){
+    message.channel.sendMessage('Medium Clue Scroll: http://runescape.wikia.com/wiki/Clue_scroll_(medium)');
+  }
+});
+bot.on('message', (message) =>{
+  if (message.content == '~cluescroll-hard'){
+    message.channel.sendMessage('Hard Clue Scroll: http://runescape.wikia.com/wiki/Clue_scroll_(hard)');
+  }
+});
+bot.on('message', (message) =>{
+  if (message.content == '~cluescroll-elite'){
+    message.channel.sendMessage('Elite Clue Scroll: http://runescape.wikia.com/wiki/Clue_scroll_(elite)');
+  }
+});
+
 
 /////////////////////////////////////////                     HELP COMMAND                       //////////////////////////////////////////////////////////
 bot.on('message', (message) =>{
